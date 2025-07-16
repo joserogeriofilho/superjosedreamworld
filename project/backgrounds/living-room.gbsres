@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "387fd8c5-2087-4fa8-ac46-3b1357abd2cf",
+  "name": "living-room",
+  "symbol": "bg_living_room",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "living-room.png",
+  "autoColor": true,
+  "tileColors": ""
+}

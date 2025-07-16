@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "9dd4da53-9a68-4406-ab0e-1948bcedfa20",
+  "name": "language-screen",
+  "symbol": "bg_language_screen",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "language-screen.png",
+  "autoColor": true,
+  "tileColors": ""
+}

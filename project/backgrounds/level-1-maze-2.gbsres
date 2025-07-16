@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "e512df28-1b83-455b-a7b4-560f5cab5908",
+  "name": "level-1-maze-2",
+  "symbol": "bg_level_1_maze_2",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "level-1-maze-2.png",
+  "autoColor": true,
+  "tileColors": ""
+}
