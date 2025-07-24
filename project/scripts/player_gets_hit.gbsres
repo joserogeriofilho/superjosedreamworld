@@ -1,0 +1,148 @@
+{
+  "_resourceType": "script",
+  "id": "4f5156a1-ab5f-4d2c-8358-be19743e3092",
+  "name": "Player gets hit",
+  "description": "If player not blinking, take a hit",
+  "variables": {
+    "V1": {
+      "id": "V1",
+      "name": "damage",
+      "passByReference": false
+    }
+  },
+  "actors": {},
+  "symbol": "script_2",
+  "script": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "3",
+        "flag": 0,
+        "__collapseElse": false,
+        "__collapse": false
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "command": "EVENT_VARIABLE_MATH_EVALUATE",
+            "args": {
+              "variable": "2",
+              "expression": "$02$ - $V1$",
+              "__collapse": true
+            },
+            "id": "627b9155-1928-45c9-aa30-89faeb336e4b"
+          },
+          {
+            "command": "EVENT_CAMERA_SHAKE",
+            "args": {
+              "time": 0.5,
+              "frames": 30,
+              "shakeDirection": "horizontal",
+              "magnitude": {
+                "type": "number",
+                "value": 5
+              },
+              "__collapse": true
+            },
+            "id": "20a34902-05d2-4c3b-bfec-da09a82f153b"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "lte",
+                "valueA": {
+                  "type": "variable",
+                  "value": "2"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 0
+                }
+              },
+              "__collapseElse": false,
+              "__collapse": false,
+              "__label": "Blink or die"
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "3352e4f8-53ad-48f4-abce-aa661ac9e512",
+                    "__collapse": true
+                  },
+                  "id": "a9ae98d5-ae55-4630-9620-b8ee82269b99",
+                  "children": {}
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_SET_FLAGS",
+                  "args": {
+                    "variable": "3",
+                    "flag1": true,
+                    "flag2": false,
+                    "flag3": false,
+                    "flag4": false,
+                    "flag5": false,
+                    "flag6": false,
+                    "flag7": false,
+                    "flag8": false,
+                    "flag9": false,
+                    "flag10": false,
+                    "flag11": false,
+                    "flag12": false,
+                    "flag13": false,
+                    "flag14": false,
+                    "flag15": false,
+                    "flag16": false,
+                    "__label": "Set player invulnerable",
+                    "__collapse": true
+                  },
+                  "id": "eb5b29dd-7109-45f9-9bb9-371f2737cc2c"
+                },
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "97348a04-4181-40f9-953a-d9c0ac525de0",
+                    "__collapse": true
+                  },
+                  "id": "9591aae3-f5ee-465f-8bbf-75e2f545505b"
+                },
+                {
+                  "command": "EVENT_CLEAR_FLAGS",
+                  "args": {
+                    "variable": "3",
+                    "flag1": true,
+                    "flag2": false,
+                    "flag3": false,
+                    "flag4": false,
+                    "flag5": false,
+                    "flag6": false,
+                    "flag7": false,
+                    "flag8": false,
+                    "flag9": false,
+                    "flag10": false,
+                    "flag11": false,
+                    "flag12": false,
+                    "flag13": false,
+                    "flag14": false,
+                    "flag15": false,
+                    "flag16": false,
+                    "__collapse": true,
+                    "__label": "Set player vulnerable again"
+                  },
+                  "id": "61c4c1d1-a504-40e2-a23d-beff683ea6ec"
+                }
+              ]
+            },
+            "id": "9fa1672f-f202-44c7-9767-ceca277c59d9"
+          }
+        ]
+      },
+      "id": "24a83ca0-38b5-4d0c-8bf7-aee4a0a9ec0e"
+    }
+  ]
+}

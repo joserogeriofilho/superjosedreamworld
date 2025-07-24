@@ -2,7 +2,7 @@
   "_resourceType": "scene",
   "id": "a0e3517e-0f87-43ff-835b-f5554389b41c",
   "_index": 0,
-  "name": "Scene 1",
+  "name": "Language Selector",
   "backgroundId": "9dd4da53-9a68-4406-ab0e-1948bcedfa20",
   "tilesetId": "",
   "width": 20,
@@ -43,7 +43,7 @@
         ],
         "override": true,
         "__scriptTabs": "press",
-        "__collapse": false
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -103,7 +103,7 @@
         ],
         "override": true,
         "__scriptTabs": "press",
-        "__collapse": false
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -301,6 +301,14 @@
         ]
       },
       "id": "d25ccb6d-fc08-4aa5-9b74-c8540dd41902"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "3303ac40-3138-4d6e-8f6b-12f65ec66959",
+        "__collapse": true
+      },
+      "id": "8a3f4179-7b56-472e-a352-80c7932e52cb"
     }
   ],
   "playerHit1Script": [],

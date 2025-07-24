@@ -1,0 +1,60 @@
+{
+  "_resourceType": "script",
+  "id": "e306782b-ac34-4ed7-9e05-3fa1208c76fb",
+  "name": "Detect enemy hit",
+  "description": "",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "damage",
+      "passByReference": true
+    }
+  },
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "enemy_actor"
+    }
+  },
+  "symbol": "script_1",
+  "script": [
+    {
+      "command": "EVENT_IF_ACTOR_DISTANCE_FROM_ACTOR",
+      "args": {
+        "actorId": "player",
+        "operator": "<=",
+        "distance": {
+          "type": "number",
+          "value": 2
+        },
+        "otherActorId": "0",
+        "__collapseElse": false,
+        "__collapse": false,
+        "__comment": false,
+        "__disableElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "4f5156a1-ab5f-4d2c-8358-be19743e3092",
+              "__collapse": false,
+              "$variable[V0]$": {
+                "type": "variable",
+                "value": "V0"
+              },
+              "$variable[V1]$": {
+                "type": "variable",
+                "value": "V0"
+              }
+            },
+            "id": "b348173b-2342-4c08-958a-99a3381b5dfc"
+          }
+        ],
+        "false": []
+      },
+      "id": "862e8674-c44a-4fc0-9f68-3c1f14e96600"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "_resourceType": "script",
+  "id": "3352e4f8-53ad-48f4-abce-aa661ac9e512",
+  "name": "Player death",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_3",
+  "script": [
+    {
+      "command": "EVENT_FADE_OUT",
+      "args": {
+        "speed": 3,
+        "__collapse": true
+      },
+      "id": "7eb52de2-1337-48f9-8086-d092646f5a73"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "4c413601-c7f2-4cb4-b7a7-a0b7bfe4b629"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "a0e3517e-0f87-43ff-835b-f5554389b41c",
+        "x": {
+          "type": "number",
+          "value": 4
+        },
+        "y": {
+          "type": "number",
+          "value": 5
+        },
+        "direction": "",
+        "fadeSpeed": "2",
+        "__collapse": false
+      },
+      "id": "f6cb237d-e0ab-4564-b95d-03ae5280537d"
+    },
+    {
+      "command": "EVENT_FADE_IN",
+      "args": {
+        "speed": 3,
+        "__collapse": true
+      },
+      "id": "63bc106d-8114-4eaf-9d11-0e70e729a486"
+    }
+  ]
+}

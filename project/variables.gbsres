@@ -15,6 +15,31 @@
       "id": "2",
       "name": "player_life",
       "symbol": "var_player_life"
+    },
+    {
+      "id": "3",
+      "name": "player_status",
+      "symbol": "var_player_status"
+    },
+    {
+      "id": "4",
+      "name": "enemy_1_life",
+      "symbol": "var_enemy_1_life"
+    },
+    {
+      "id": "5",
+      "name": "enemy_2_life",
+      "symbol": "var_enemy_2_life"
+    },
+    {
+      "id": "6",
+      "name": "enemy_3_life",
+      "symbol": "var_enemy_3_life"
+    },
+    {
+      "id": "7",
+      "name": "enemy_4_life",
+      "symbol": "var_enemy_4_life"
     }
   ]
 }

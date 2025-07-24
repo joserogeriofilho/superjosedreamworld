@@ -1,0 +1,109 @@
+{
+  "_resourceType": "script",
+  "id": "97348a04-4181-40f9-953a-d9c0ac525de0",
+  "name": "Blink actor",
+  "description": "",
+  "variables": {},
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Actor A"
+    }
+  },
+  "symbol": "script_4",
+  "script": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "0",
+        "__collapse": true
+      },
+      "id": "f04b8dd2-169a-4138-9868-9f7b342ec89f"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.1,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "62094d8c-1b98-492a-a2d2-4c2104fb41a5"
+    },
+    {
+      "command": "EVENT_ACTOR_SHOW",
+      "args": {
+        "actorId": "0",
+        "__collapse": true
+      },
+      "id": "0a77942e-30cd-4749-bcce-564348790230"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.1,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "7f55d3a4-0d9e-45c8-9ef3-7968f0b925a8"
+    },
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "0",
+        "__collapse": true
+      },
+      "id": "4d31dc0e-4043-4406-93f0-7583355852b7"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.1,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "01bf70f0-491b-4c4e-8007-3eda2a096fc1"
+    },
+    {
+      "command": "EVENT_ACTOR_SHOW",
+      "args": {
+        "actorId": "0",
+        "__collapse": true
+      },
+      "id": "7cfc31f6-bd12-440a-94fe-a19242700c50"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.1,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "c096ff09-47cd-494f-ac60-1279535755cd"
+    },
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "0",
+        "__collapse": true
+      },
+      "id": "ebd6cdf9-bdc0-44a1-8a45-760f761d3805"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.1,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "bd4498a9-50ea-4fc5-b8e9-8c66b3e06347"
+    },
+    {
+      "command": "EVENT_ACTOR_SHOW",
+      "args": {
+        "actorId": "0",
+        "__collapse": false
+      },
+      "id": "0f2380c1-d764-459e-be6d-abbbdc6758bd"
+    }
+  ]
+}
