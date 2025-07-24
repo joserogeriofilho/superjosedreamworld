@@ -17,54 +17,16 @@
   "y": 296,
   "script": [
     {
-      "command": "EVENT_SET_INPUT_SCRIPT",
+      "command": "EVENT_CALL_CUSTOM_EVENT",
       "args": {
-        "input": [
-          "b"
-        ],
-        "override": true,
-        "__scriptTabs": "press",
-        "__collapse": false,
-        "__comment": false
+        "customEventId": "5c49ccc0-83e0-4a4e-8c43-5f251d3c5ba8"
       },
-      "children": {
-        "true": [
-          {
-            "command": "EVENT_LAUNCH_PROJECTILE",
-            "args": {
-              "__section": "source",
-              "spriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
-              "spriteStateId": "",
-              "actorId": "$self$",
-              "x": 0,
-              "y": 0,
-              "directionType": "actor",
-              "otherActorId": "$self$",
-              "direction": "right",
-              "angle": 0,
-              "angleVariable": "L0",
-              "targetActorId": "$self$",
-              "initialOffset": 12,
-              "speed": 2,
-              "animSpeed": 15,
-              "lifeTime": 0.2,
-              "loopAnim": false,
-              "destroyOnHit": false,
-              "collisionGroup": "3",
-              "collisionMask": [
-                "1"
-              ],
-              "__collapse": false
-            },
-            "id": "552cb88f-4204-455d-a6af-cea6988e8cca"
-          }
-        ]
-      },
-      "id": "191fe86f-8635-474b-b752-fe53b1c86152"
+      "id": "d5bb7ca0-2356-4990-b006-7f7dc4110278"
     }
   ],
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],
-  "playerSpriteSheetId": "bef77058-9dde-460e-8f50-b7e95c7b294b"
+  "playerSpriteSheetId": "bef77058-9dde-460e-8f50-b7e95c7b294b",
+  "autoFadeEventCollapse": true
 }

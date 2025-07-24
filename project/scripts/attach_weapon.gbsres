@@ -1,0 +1,54 @@
+{
+  "_resourceType": "script",
+  "id": "5c49ccc0-83e0-4a4e-8c43-5f251d3c5ba8",
+  "name": "Attach weapon",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_6",
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_LAUNCH_PROJECTILE",
+            "args": {
+              "__section": "projectile",
+              "spriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
+              "spriteStateId": "",
+              "actorId": "$self$",
+              "x": 0,
+              "y": 0,
+              "directionType": "actor",
+              "otherActorId": "$self$",
+              "direction": "right",
+              "angle": 0,
+              "angleVariable": "0",
+              "targetActorId": "$self$",
+              "initialOffset": 12,
+              "speed": 2,
+              "animSpeed": 15,
+              "lifeTime": 0.2,
+              "loopAnim": false,
+              "destroyOnHit": false,
+              "collisionGroup": "3",
+              "collisionMask": [
+                "1"
+              ]
+            },
+            "id": "0541925e-bd5a-4ba5-851a-84d6cbef9a1a"
+          }
+        ]
+      },
+      "id": "318e4496-e2ab-4b96-b9ef-c652eee9b4cb"
+    }
+  ]
+}

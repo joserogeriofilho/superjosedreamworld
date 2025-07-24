@@ -84,6 +84,41 @@
   "colorMode": "mixed",
   "generateDebugFilesEnabled": false,
   "compilerPreset": 3000,
-  "scriptEventPresets": {},
+  "scriptEventPresets": {
+    "EVENT_LAUNCH_PROJECTILE": {
+      "513e7e9e-ae5c-4141-bc82-ac6d6ed9e763": {
+        "id": "513e7e9e-ae5c-4141-bc82-ac6d6ed9e763",
+        "name": "Normal attack",
+        "groups": [
+          "projectile",
+          "source",
+          "direction"
+        ],
+        "args": {
+          "spriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
+          "spriteStateId": "",
+          "speed": 2,
+          "animSpeed": 15,
+          "lifeTime": 0.2,
+          "loopAnim": false,
+          "destroyOnHit": false,
+          "collisionGroup": "3",
+          "collisionMask": [
+            "1"
+          ],
+          "actorId": "$self$",
+          "x": 0,
+          "y": 0,
+          "directionType": "actor",
+          "otherActorId": "$self$",
+          "direction": "right",
+          "angle": 0,
+          "angleVariable": "L0",
+          "targetActorId": "$self$",
+          "initialOffset": 12
+        }
+      }
+    }
+  },
   "scriptEventDefaultPresets": {}
 }

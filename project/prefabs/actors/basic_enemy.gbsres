@@ -28,7 +28,7 @@
             "value": 0
           }
         },
-        "__collapseElse": true
+        "__collapseElse": false
       },
       "children": {
         "true": [
@@ -51,7 +51,8 @@
                     "$variable[V0]$": {
                       "type": "number",
                       "value": 1
-                    }
+                    },
+                    "__collapse": true
                   },
                   "id": "d3c9a957-67ff-4fa1-a231-d42e3441793d"
                 }
@@ -90,7 +91,7 @@
           "property": "ypos"
         },
         "moveType": "horizontal",
-        "useCollisions": false,
+        "useCollisions": true,
         "__collapse": false
       },
       "id": "c7f1fd7a-e8ac-4964-9782-fddc2e27e868"
@@ -160,14 +161,6 @@
               "__collapse": true
             },
             "id": "59e5263e-cab8-4154-b4ba-2ca9f2392fca"
-          },
-          {
-            "command": "EVENT_DEC_VALUE",
-            "args": {
-              "variable": "4",
-              "__collapse": true
-            },
-            "id": "9da4d125-fa0d-4a79-9d94-d38cf9a6ced1"
           }
         ]
       },
