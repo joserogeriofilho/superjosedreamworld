@@ -8,6 +8,6 @@
   "imageWidth": 160,
   "imageHeight": 144,
   "filename": "living-room.png",
-  "autoColor": true,
-  "tileColors": ""
+  "tileColors": "",
+  "autoColor": true
 }

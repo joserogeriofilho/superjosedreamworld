@@ -5,6 +5,16 @@
       "id": "0",
       "name": "language",
       "symbol": "var_language"
+    },
+    {
+      "id": "1",
+      "name": "story_step",
+      "symbol": "var_story_step"
+    },
+    {
+      "id": "2",
+      "name": "player_life",
+      "symbol": "var_player_life"
     }
   ]
 }
