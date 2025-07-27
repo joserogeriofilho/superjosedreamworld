@@ -1,0 +1,106 @@
+{
+  "_resourceType": "actor",
+  "id": "cc161b5d-28ad-4645-b98d-d0aedb4f4e1e",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "67248149-2809-4c20-9500-352dbf2173c2",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": true,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_9",
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "lt",
+          "valueA": {
+            "type": "variable",
+            "value": "2"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 2
+          }
+        },
+        "__collapseElse": false,
+        "__disableElse": true,
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_SPRITE",
+            "args": {
+              "actorId": "$self$",
+              "spriteSheetId": "c82c57a0-5aaf-467d-881a-715ef7bfe203",
+              "__collapse": true
+            },
+            "id": "fae5442c-e7b7-42fb-87e1-b59d70a44f9f"
+          }
+        ],
+        "false": []
+      },
+      "id": "faf4e2d9-8c9d-48de-96fa-07e1a5a1c953"
+    }
+  ],
+  "updateScript": [
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "baffaa53-5791-4e1d-b252-3b5e53169f97"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "lt",
+          "valueA": {
+            "type": "variable",
+            "value": "2"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 2
+          }
+        },
+        "__collapseElse": false,
+        "__disableElse": true,
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_SPRITE",
+            "args": {
+              "actorId": "$self$",
+              "spriteSheetId": "c82c57a0-5aaf-467d-881a-715ef7bfe203",
+              "__collapse": true
+            },
+            "id": "b1b40d13-d52a-4927-b32f-1c243d58259d"
+          }
+        ],
+        "false": []
+      },
+      "id": "3cb5152d-0882-40bd-839b-4d9ec4f09dc3"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 2,
+  "y": 0,
+  "_index": 2
+}

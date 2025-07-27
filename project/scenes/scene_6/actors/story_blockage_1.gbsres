@@ -1,0 +1,103 @@
+{
+  "_resourceType": "actor",
+  "id": "794de834-28e7-4267-ab94-36ae1344ba20",
+  "name": "story_blockage_1",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "bc8a5b6f-53b5-40fb-a355-6e977e5eda94",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "1",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_18",
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "1"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 2
+          }
+        },
+        "__collapseElse": true,
+        "__disableElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$",
+              "__collapse": true
+            },
+            "id": "1a5b5fd6-eeb3-4473-b432-d43c05d750da"
+          }
+        ],
+        "false": []
+      },
+      "id": "e8a659b7-329d-40a1-a81c-dc6dba874372"
+    }
+  ],
+  "updateScript": [
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.3,
+        "frames": 30,
+        "__collapse": false
+      },
+      "id": "131c64c1-ee3f-4e2a-90e7-b7abc3d42bcd"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "1"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 2
+          }
+        },
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$",
+              "__collapse": true
+            },
+            "id": "89147018-ec8b-4390-b81f-62df2600c730"
+          }
+        ],
+        "false": []
+      },
+      "id": "d265d783-8805-43a3-a942-c9f5d6272cba"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 9,
+  "y": 17,
+  "_index": 5
+}

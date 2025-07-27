@@ -2,7 +2,7 @@
   "_resourceType": "scene",
   "id": "a57f5135-2327-4ca3-a365-ec8b59751ceb",
   "_index": 2,
-  "name": "Dream Maze 1",
+  "name": "Maze Hall",
   "backgroundId": "e44991be-65c1-4a0b-b9e2-582fd9d2500d",
   "tilesetId": "",
   "width": 20,
@@ -15,7 +15,16 @@
   "symbol": "scene_3",
   "x": 304,
   "y": 296,
-  "script": [],
+  "script": [
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "82b45f32-a4e8-40be-a626-3de40f2d6e2a",
+        "__collapse": true
+      },
+      "id": "6724e5db-b6b1-4ccc-9a1a-8fce6bf91268"
+    }
+  ],
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],

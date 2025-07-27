@@ -28,7 +28,8 @@
             "value": 0
           }
         },
-        "__collapseElse": false
+        "__collapseElse": false,
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -113,7 +114,7 @@
       "command": "EVENT_DEC_VALUE",
       "args": {
         "variable": "4",
-        "__collapse": true
+        "__collapse": false
       },
       "id": "15867b15-4c68-49a9-a3df-47839b6ecd6c"
     },

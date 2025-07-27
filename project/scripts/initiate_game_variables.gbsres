@@ -66,6 +66,18 @@
         "__collapse": true
       },
       "id": "1dee3016-f336-433e-b6a5-57406b57ec17"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "1",
+        "value": {
+          "type": "number",
+          "value": 0
+        },
+        "__collapse": true
+      },
+      "id": "aa99dfcd-3d29-4e7c-ba44-09e2fa76f954"
     }
   ]
 }
