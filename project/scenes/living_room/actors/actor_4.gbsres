@@ -1,25 +1,31 @@
 {
-  "_resourceType": "trigger",
-  "id": "382d9324-623f-4a8f-aaa0-73901a1bfac7",
+  "_resourceType": "actor",
+  "id": "8a67e0f8-a569-4193-ad06-7b3845b1dd1c",
   "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "67248149-2809-4c20-9500-352dbf2173c2",
   "prefabId": "",
-  "x": 7,
-  "y": 14,
-  "symbol": "trigger_0",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
   "prefabScriptOverrides": {},
-  "width": 2,
-  "height": 1,
+  "symbol": "actor_20",
   "script": [
     {
       "command": "EVENT_SWITCH",
       "args": {
         "variable": "0",
         "choices": 3,
-        "__collapseCase0": true,
+        "__collapseCase0": false,
         "value0": 1,
-        "__collapseCase1": true,
+        "__collapseCase1": false,
         "value1": 2,
-        "__collapseCase2": true,
+        "__collapseCase2": false,
         "value2": 3,
         "__collapseCase3": false,
         "value3": 4,
@@ -58,7 +64,7 @@
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "Não quero sair de casa\nagora, estou muito\ncansado."
+                "Tenho que pagar as\ncontas..."
               ],
               "__section": "text",
               "avatarId": "",
@@ -78,7 +84,7 @@
               "closeDelayFrames": 30,
               "__collapse": false
             },
-            "id": "35ea3ae8-da91-4783-aaeb-11ff8fac281d"
+            "id": "ea4a447d-e537-43df-af2c-c96f4a296422"
           }
         ],
         "true1": [
@@ -86,7 +92,7 @@
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "No quiero salir de casa\nahora. Estoy muy\ncansado."
+                "Tengo que pagar las\ncuentas..."
               ],
               "__section": "text",
               "avatarId": "",
@@ -106,7 +112,7 @@
               "closeDelayFrames": 30,
               "__collapse": false
             },
-            "id": "180d2abb-94cb-4619-99c3-771c6f821000"
+            "id": "4b8003e4-9819-4dd6-bd63-84ab6786b10b"
           }
         ],
         "true2": [
@@ -114,7 +120,7 @@
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "I don't wanna go out\nright now. I'm too tired."
+                "I have to pay my bills..."
               ],
               "__section": "text",
               "avatarId": "",
@@ -133,7 +139,7 @@
               "closeDelayTime": 0.5,
               "closeDelayFrames": 30
             },
-            "id": "121b25d8-5994-4653-9626-5130f573ded1"
+            "id": "1b1da00c-157e-4cff-9133-86479cddcf18"
           }
         ],
         "true3": [],
@@ -151,27 +157,15 @@
         "true15": [],
         "false": []
       },
-      "id": "36279559-46e1-470c-a7af-069d37fb240d"
-    },
-    {
-      "command": "EVENT_ACTOR_MOVE_RELATIVE",
-      "args": {
-        "actorId": "$self$",
-        "x": {
-          "type": "number",
-          "value": 0
-        },
-        "y": {
-          "type": "number",
-          "value": -2
-        },
-        "moveType": "horizontal",
-        "useCollisions": false,
-        "__collapse": true
-      },
-      "id": "b414d1d7-ef8d-41cd-b644-602fb264e94b"
+      "id": "b66ba38c-d9aa-42a7-93a1-07deb5cfa181"
     }
   ],
-  "leaveScript": [],
-  "_index": 0
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 3,
+  "y": 7,
+  "_index": 3
 }

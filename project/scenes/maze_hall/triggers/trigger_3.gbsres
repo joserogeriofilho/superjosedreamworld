@@ -23,9 +23,21 @@
           "value": 9
         },
         "direction": "",
-        "fadeSpeed": "2"
+        "fadeSpeed": "2",
+        "__collapse": true
       },
       "id": "c60ded22-da7c-4306-b2df-2a569d736bd0"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "8",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "7a90bd2a-06ca-4325-8594-6f21122a68e5"
     }
   ],
   "leaveScript": [],

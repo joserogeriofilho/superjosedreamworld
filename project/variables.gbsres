@@ -40,6 +40,11 @@
       "id": "7",
       "name": "enemy_4_life",
       "symbol": "var_enemy_4_life"
+    },
+    {
+      "id": "8",
+      "name": "first_time_in_scene_hall",
+      "symbol": "var_first_time_in_scene_hal"
     }
   ]
 }

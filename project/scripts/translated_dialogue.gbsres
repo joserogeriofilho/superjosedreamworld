@@ -1,14 +1,11 @@
 {
-  "_resourceType": "trigger",
-  "id": "382d9324-623f-4a8f-aaa0-73901a1bfac7",
-  "name": "",
-  "prefabId": "",
-  "x": 7,
-  "y": 14,
-  "symbol": "trigger_0",
-  "prefabScriptOverrides": {},
-  "width": 2,
-  "height": 1,
+  "_resourceType": "script",
+  "id": "dc5a53cb-8e5f-4320-b157-6b6d40169d7d",
+  "name": "Translated Dialogue",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_7",
   "script": [
     {
       "command": "EVENT_SWITCH",
@@ -58,7 +55,7 @@
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "Não quero sair de casa\nagora, estou muito\ncansado."
+                "Português"
               ],
               "__section": "text",
               "avatarId": "",
@@ -76,9 +73,9 @@
               "closeButton": "a",
               "closeDelayTime": 0.5,
               "closeDelayFrames": 30,
-              "__collapse": false
+              "__collapse": true
             },
-            "id": "35ea3ae8-da91-4783-aaeb-11ff8fac281d"
+            "id": "86207ff6-6d85-4a83-aa58-4732a64ba67e"
           }
         ],
         "true1": [
@@ -86,7 +83,7 @@
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "No quiero salir de casa\nahora. Estoy muy\ncansado."
+                "Español"
               ],
               "__section": "text",
               "avatarId": "",
@@ -104,9 +101,9 @@
               "closeButton": "a",
               "closeDelayTime": 0.5,
               "closeDelayFrames": 30,
-              "__collapse": false
+              "__collapse": true
             },
-            "id": "180d2abb-94cb-4619-99c3-771c6f821000"
+            "id": "af8153f2-5419-4031-be26-443df35c1e3c"
           }
         ],
         "true2": [
@@ -114,7 +111,7 @@
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "I don't wanna go out\nright now. I'm too tired."
+                "English"
               ],
               "__section": "text",
               "avatarId": "",
@@ -131,9 +128,10 @@
               "closeWhen": "key",
               "closeButton": "a",
               "closeDelayTime": 0.5,
-              "closeDelayFrames": 30
+              "closeDelayFrames": 30,
+              "__collapse": true
             },
-            "id": "121b25d8-5994-4653-9626-5130f573ded1"
+            "id": "351a0023-ff92-4f36-be63-248f1a5aa449"
           }
         ],
         "true3": [],
@@ -151,27 +149,7 @@
         "true15": [],
         "false": []
       },
-      "id": "36279559-46e1-470c-a7af-069d37fb240d"
-    },
-    {
-      "command": "EVENT_ACTOR_MOVE_RELATIVE",
-      "args": {
-        "actorId": "$self$",
-        "x": {
-          "type": "number",
-          "value": 0
-        },
-        "y": {
-          "type": "number",
-          "value": -2
-        },
-        "moveType": "horizontal",
-        "useCollisions": false,
-        "__collapse": true
-      },
-      "id": "b414d1d7-ef8d-41cd-b644-602fb264e94b"
+      "id": "8d712ced-db45-4165-878f-d8288672aa15"
     }
-  ],
-  "leaveScript": [],
-  "_index": 0
+  ]
 }

@@ -3,11 +3,11 @@
   "id": "387fd8c5-2087-4fa8-ac46-3b1357abd2cf",
   "name": "living-room",
   "symbol": "bg_living_room",
-  "width": 20,
+  "width": 40,
   "height": 18,
-  "imageWidth": 160,
+  "imageWidth": 320,
   "imageHeight": 144,
   "filename": "living-room.png",
-  "tileColors": "",
+  "tileColors": "002d0+",
   "autoColor": true
 }

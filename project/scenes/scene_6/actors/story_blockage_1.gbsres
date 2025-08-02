@@ -28,7 +28,7 @@
           },
           "valueB": {
             "type": "number",
-            "value": 2
+            "value": 3
           }
         },
         "__collapseElse": true,
@@ -71,12 +71,12 @@
           },
           "valueB": {
             "type": "number",
-            "value": 2
+            "value": 3
           }
         },
         "__collapseElse": true,
         "__disableElse": true,
-        "__collapse": true
+        "__collapse": false
       },
       "children": {
         "true": [

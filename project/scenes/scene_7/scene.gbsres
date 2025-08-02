@@ -2,19 +2,25 @@
   "_resourceType": "scene",
   "id": "92fecce4-95d1-4d40-b2b8-b4e84a7d7318",
   "_index": 6,
-  "name": "Scene 7",
-  "backgroundId": "3e3ea923-7c15-4f36-b974-797cadc969ab",
-  "tilesetId": "",
-  "width": 20,
-  "height": 18,
   "type": "TOPDOWN",
-  "paletteIds": [],
-  "spritePaletteIds": [],
-  "collisions": "0f9+002+0fa+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f!0013+0f!0013+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f15+",
-  "autoFadeSpeed": 1,
+  "name": "Scene 7",
   "symbol": "scene_7",
   "x": 512,
   "y": 488,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "3e3ea923-7c15-4f36-b974-797cadc969ab",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [
+    "",
+    "a15f35d7-d638-4267-96b7-a9318cc0f648",
+    "097d63bf-1b37-4522-85be-a4d106b30877",
+    "7e36f234-0a0b-467a-8be5-6efc5b793319"
+  ],
+  "autoFadeSpeed": 1,
+  "autoFadeEventCollapse": true,
+  "playerSpriteSheetId": "bef77058-9dde-460e-8f50-b7e95c7b294b",
   "script": [
     {
       "command": "EVENT_CALL_CUSTOM_EVENT",
@@ -27,6 +33,5 @@
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],
-  "playerSpriteSheetId": "bef77058-9dde-460e-8f50-b7e95c7b294b",
-  "autoFadeEventCollapse": true
+  "collisions": "0f9+002+0fa+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f!0013+0f!0013+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f15+"
 }

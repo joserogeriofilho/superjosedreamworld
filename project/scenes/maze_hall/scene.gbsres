@@ -2,20 +2,64 @@
   "_resourceType": "scene",
   "id": "a57f5135-2327-4ca3-a365-ec8b59751ceb",
   "_index": 2,
-  "name": "Maze Hall",
-  "backgroundId": "e44991be-65c1-4a0b-b9e2-582fd9d2500d",
-  "tilesetId": "",
-  "width": 20,
-  "height": 18,
   "type": "TOPDOWN",
-  "paletteIds": [],
-  "spritePaletteIds": [],
-  "collisions": "0f15+0012+0f2+0012+0f2+0012+0f2+002+0fe+002+0f2+002+0f!00c+0f!002+0f2+002+0f!00c+0f!002+0f2+002+0f!00c+0f!002+0f5+00c+0f4+003c+0f4+00c+0f5+002+0f!00c+0f!002+0f2+002+0f!00c+0f!002+0f2+002+0f!024+004+024+0f!002+0f2+002+0f5+004+0f5+002+0f9+004+0f8+",
-  "autoFadeSpeed": 1,
+  "name": "Maze Hall",
   "symbol": "scene_3",
   "x": 304,
   "y": 296,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "e44991be-65c1-4a0b-b9e2-582fd9d2500d",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [
+    "",
+    "a15f35d7-d638-4267-96b7-a9318cc0f648",
+    "097d63bf-1b37-4522-85be-a4d106b30877",
+    "7e36f234-0a0b-467a-8be5-6efc5b793319"
+  ],
+  "autoFadeSpeed": null,
+  "playerSpriteSheetId": "bef77058-9dde-460e-8f50-b7e95c7b294b",
   "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "8"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_FADE_IN",
+            "args": {
+              "speed": 6,
+              "__collapse": false
+            },
+            "id": "b23a737f-bf23-4c20-bb74-1c053720f59d"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_FADE_IN",
+            "args": {
+              "speed": "2"
+            },
+            "id": "e5c75995-ab22-45e7-a9b4-f8877c9671d3"
+          }
+        ]
+      },
+      "id": "eff17c0d-7d34-4347-849b-662e93f8408d"
+    },
     {
       "command": "EVENT_MUSIC_PLAY",
       "args": {
@@ -28,5 +72,6 @@
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],
-  "playerSpriteSheetId": "bef77058-9dde-460e-8f50-b7e95c7b294b"
+  "collisions": "0f15+0012+0f2+0012+0f2+0012+0f2+002+0fe+002+0f2+002+0f!00c+0f!002+0f2+002+0f!00c+0f!002+0f2+002+0f!00c+0f!002+0f5+00c+0f4+003c+0f4+00c+0f5+002+0f!00c+0f!002+0f2+002+0f!00c+0f!002+0f2+002+0f!024+004+024+0f!002+0f2+002+0f5+004+0f5+002+0f9+004+0f8+",
+  "autoFadeEventCollapse": true
 }

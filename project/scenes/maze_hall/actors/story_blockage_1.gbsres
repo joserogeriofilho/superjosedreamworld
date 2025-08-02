@@ -28,7 +28,7 @@
           },
           "valueB": {
             "type": "number",
-            "value": 1
+            "value": 2
           }
         },
         "__collapseElse": true,

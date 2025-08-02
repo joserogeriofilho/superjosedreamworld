@@ -163,7 +163,7 @@
         ],
         "override": true,
         "__scriptTabs": "press",
-        "__collapse": true
+        "__collapse": false
       },
       "children": {
         "true": [
@@ -179,7 +179,7 @@
                 },
                 "valueB": {
                   "type": "number",
-                  "value": 3
+                  "value": 5
                 }
               },
               "__collapseElse": true,
@@ -217,7 +217,7 @@
                 },
                 "valueB": {
                   "type": "number",
-                  "value": 5
+                  "value": 7
                 }
               },
               "__collapseElse": true,
@@ -255,7 +255,7 @@
                 },
                 "valueB": {
                   "type": "number",
-                  "value": 7
+                  "value": 9
                 }
               },
               "__collapseElse": true,
@@ -291,10 +291,11 @@
               },
               "y": {
                 "type": "number",
-                "value": 13
+                "value": 6
               },
               "direction": "",
-              "fadeSpeed": "2"
+              "fadeSpeed": "2",
+              "__collapse": true
             },
             "id": "dcca5c06-0b34-4527-8893-e14e159a7f3b"
           }

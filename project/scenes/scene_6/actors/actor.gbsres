@@ -121,7 +121,7 @@
       "command": "EVENT_DEC_VALUE",
       "args": {
         "variable": "6",
-        "__collapse": false
+        "__collapse": true
       },
       "id": "52ff0f34-6b04-45ee-922c-74e2632614eb",
       "children": {}
@@ -178,7 +178,8 @@
                 }
               },
               "__collapseElse": true,
-              "__disableElse": true
+              "__disableElse": true,
+              "__collapse": false
             },
             "children": {
               "true": [
@@ -188,7 +189,7 @@
                     "variable": "1",
                     "value": {
                       "type": "number",
-                      "value": 2
+                      "value": 3
                     }
                   },
                   "id": "b11978f2-fc5a-4f4e-ba06-e7259a0f80dc",
