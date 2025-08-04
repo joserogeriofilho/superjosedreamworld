@@ -218,7 +218,7 @@
             "args": {
               "time": 1.6,
               "frames": 30,
-              "__collapse": false
+              "__collapse": true
             },
             "id": "9ecc52d6-dce4-4819-957b-679b4027fd09"
           },
@@ -234,9 +234,18 @@
                 "value": 0
               },
               "speed": 0.5,
-              "__collapse": false
+              "__collapse": true,
+              "__comment": true
             },
             "id": "86d3ca8b-dfd5-4d78-a59c-ddbf24b946bf"
+          },
+          {
+            "command": "EVENT_FADE_OUT",
+            "args": {
+              "speed": 4,
+              "__collapse": false
+            },
+            "id": "16887b1b-0daf-49a7-9116-50fbead8f6be"
           },
           {
             "command": "EVENT_SWITCH_SCENE",
@@ -248,7 +257,7 @@
               },
               "y": {
                 "type": "number",
-                "value": 9
+                "value": 3
               },
               "direction": "",
               "fadeSpeed": "2",

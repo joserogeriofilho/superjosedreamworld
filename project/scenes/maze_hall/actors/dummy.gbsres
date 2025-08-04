@@ -1,21 +1,112 @@
 {
   "_resourceType": "actor",
-  "id": "932fc265-9faa-447b-8ce6-bab3d3ef5bd9",
-  "name": "",
+  "id": "f34bc42f-1f8b-4075-9fcf-b09e6806d32f",
+  "name": "Dummy",
   "frame": 0,
   "animate": false,
-  "spriteSheetId": "0448ae3b-0f49-4b47-86f8-2bb10fbf9ff4",
+  "spriteSheetId": "027fcb4a-3fb5-4ca2-898b-6d9268da68ee",
   "prefabId": "",
   "direction": "down",
-  "moveSpeed": 1,
+  "moveSpeed": 0.6125,
   "animSpeed": 15,
   "paletteId": "",
   "isPinned": false,
   "persistent": false,
-  "collisionGroup": "",
+  "collisionGroup": "1",
   "prefabScriptOverrides": {},
-  "symbol": "actor_22",
-  "script": [
+  "symbol": "actor_23",
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "1"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 3
+          }
+        },
+        "__collapseElse": true,
+        "__collapse": true,
+        "__disableElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$",
+              "__collapse": true
+            },
+            "id": "e6206d56-3a98-43bf-ba82-c1a27287cc32",
+            "children": {}
+          }
+        ],
+        "false": []
+      },
+      "id": "a894f659-bf05-418f-82be-4c660e2e20bc"
+    }
+  ],
+  "updateScript": [
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "68cd9428-ee50-45fc-ae0a-522d3dcf6faa"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "1",
+        "value": {
+          "type": "number",
+          "value": 3
+        },
+        "__collapse": true
+      },
+      "id": "937c2f8c-7e83-4163-929b-d56e7af8b1a3"
+    },
+    {
+      "command": "EVENT_ACTOR_EFFECTS",
+      "args": {
+        "effect": "splitOut",
+        "actorId": "$self$",
+        "distance": 20,
+        "speed": 3,
+        "time": 0.5,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "e6f30e53-1ea6-4f71-8ae3-9d452baf9623"
+    },
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$",
+        "__collapse": true
+      },
+      "id": "574d3fcf-7a99-4c71-9eec-9da8691729a8"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "d47a4962-fc30-4726-929f-278cc1c08ea2"
+    },
     {
       "command": "EVENT_SWITCH",
       "args": {
@@ -64,7 +155,7 @@
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "Ah, minhas cápsulas de\nmaracujá. Isso vai me\najudar a relaxar."
+                "Muito bom! Agota você\njá pode explorar. Mas\ntenha cuidado..."
               ],
               "__section": "text",
               "avatarId": "",
@@ -82,9 +173,9 @@
               "closeButton": "a",
               "closeDelayTime": 0.5,
               "closeDelayFrames": 30,
-              "__collapse": false
+              "__collapse": true
             },
-            "id": "d9870ca5-d19c-48ed-b79a-0d9daa89a6a7"
+            "id": "768ca1ef-305a-4296-9412-fb3e0ee6219a"
           }
         ],
         "true1": [
@@ -92,7 +183,7 @@
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "Ah, aquí están mis\npastillas de maracuyá.\nEso me ayudará\na relajar."
+                "¡Muy bien! Ahora ya\npuedes explorar. Pero\nten cuidado..."
               ],
               "__section": "text",
               "avatarId": "",
@@ -110,9 +201,9 @@
               "closeButton": "a",
               "closeDelayTime": 0.5,
               "closeDelayFrames": 30,
-              "__collapse": false
+              "__collapse": true
             },
-            "id": "bba491d5-f333-4546-a428-62b4d9f2cb7a"
+            "id": "5b55a6f3-4637-4b82-b867-bc6e0bd7565b"
           }
         ],
         "true2": [
@@ -120,7 +211,7 @@
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "Oh, here's my passion\nfruit capsules. This will\nhelp me relax."
+                "Well done! Now you can\ncontinue to explore.\nJust... be careful."
               ],
               "__section": "text",
               "avatarId": "",
@@ -137,9 +228,10 @@
               "closeWhen": "key",
               "closeButton": "a",
               "closeDelayTime": 0.5,
-              "closeDelayFrames": 30
+              "closeDelayFrames": 30,
+              "__collapse": true
             },
-            "id": "4a7c37ca-d68d-4846-b8fc-39313702a96b"
+            "id": "678be7e1-4e26-405b-b341-9dc3a4bd2b2d"
           }
         ],
         "true3": [],
@@ -157,27 +249,39 @@
         "true15": [],
         "false": []
       },
-      "id": "dab950b2-386e-43e6-b4b1-d9e89b475cbe"
+      "id": "1ae50227-eb49-4373-a828-46d0a8598908"
     },
     {
-      "command": "EVENT_SET_VALUE",
+      "command": "EVENT_ACTOR_EFFECTS",
       "args": {
-        "variable": "1",
-        "value": {
-          "type": "number",
-          "value": 1
-        },
+        "effect": "flicker",
+        "actorId": "a89a2c7d-98fb-4355-986d-25a34b2469e7",
+        "distance": 20,
+        "speed": 3,
+        "time": 1,
+        "frames": 30,
         "__collapse": true
       },
-      "id": "87cd124a-8ae3-4e86-8111-8c55d05b6a90"
+      "id": "a4decb70-f6a8-4e40-bd1a-258e92c4e5be"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$",
+        "__collapse": true
+      },
+      "id": "dd186c46-c61a-4e87-b52d-c25df5b5039a"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "a89a2c7d-98fb-4355-986d-25a34b2469e7",
+        "__collapse": true
+      },
+      "id": "d53524b5-94ec-4073-ba99-7ff23872b105"
     }
   ],
-  "startScript": [],
-  "updateScript": [],
-  "hit1Script": [],
-  "hit2Script": [],
-  "hit3Script": [],
-  "x": 15,
-  "y": 7,
-  "_index": 4
+  "x": 9,
+  "y": 9,
+  "_index": 3
 }

@@ -28,22 +28,32 @@
           "type": "eq",
           "valueA": {
             "type": "variable",
-            "value": "8"
+            "value": "1"
           },
           "valueB": {
             "type": "number",
-            "value": 0
+            "value": 1
           }
         },
-        "__collapseElse": false
+        "__collapseElse": false,
+        "__collapse": false
       },
       "children": {
         "true": [
           {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 1,
+              "frames": 30,
+              "__collapse": true
+            },
+            "id": "41e0e5f2-7fc7-4f24-b4cc-2f8393c86af7"
+          },
+          {
             "command": "EVENT_FADE_IN",
             "args": {
-              "speed": 6,
-              "__collapse": false
+              "speed": 4,
+              "__collapse": true
             },
             "id": "b23a737f-bf23-4c20-bb74-1c053720f59d"
           }
@@ -52,7 +62,8 @@
           {
             "command": "EVENT_FADE_IN",
             "args": {
-              "speed": "2"
+              "speed": "2",
+              "__collapse": true
             },
             "id": "e5c75995-ab22-45e7-a9b4-f8877c9671d3"
           }
@@ -72,6 +83,6 @@
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],
-  "collisions": "0f15+0012+0f2+0012+0f2+0012+0f2+002+0fe+002+0f2+002+0f!00c+0f!002+0f2+002+0f!00c+0f!002+0f2+002+0f!00c+0f!002+0f5+00c+0f4+003c+0f4+00c+0f5+002+0f!00c+0f!002+0f2+002+0f!00c+0f!002+0f2+002+0f!024+004+024+0f!002+0f2+002+0f5+004+0f5+002+0f9+004+0f8+",
-  "autoFadeEventCollapse": true
+  "collisions": "0f15+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f!01!0012+01!0028+0f!0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0fa+002+0f9+",
+  "autoFadeEventCollapse": false
 }

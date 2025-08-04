@@ -31,8 +31,8 @@
             "value": 0
           }
         },
-        "__collapseElse": true,
-        "__collapse": true
+        "__collapseElse": false,
+        "__collapse": false
       },
       "children": {
         "true": [
@@ -44,7 +44,7 @@
               "frames": 8,
               "__scriptTabs": "end",
               "units": "frames",
-              "__collapse": false
+              "__collapse": true
             },
             "children": {
               "script": [
@@ -160,7 +160,7 @@
               "variable": "1",
               "value": {
                 "type": "number",
-                "value": 2
+                "value": 10
               },
               "__collapse": false
             },

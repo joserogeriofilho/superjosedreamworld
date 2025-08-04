@@ -4,7 +4,7 @@
   "name": "",
   "frame": 0,
   "animate": false,
-  "spriteSheetId": "67248149-2809-4c20-9500-352dbf2173c2",
+  "spriteSheetId": "8a4c32a7-b331-4f26-9d53-36f38fae7e4a",
   "prefabId": "",
   "direction": "down",
   "moveSpeed": 1,
@@ -166,6 +166,6 @@
   "hit2Script": [],
   "hit3Script": [],
   "x": 3,
-  "y": 7,
+  "y": 9,
   "_index": 3
 }

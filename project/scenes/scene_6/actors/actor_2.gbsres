@@ -32,7 +32,7 @@
           }
         },
         "__collapseElse": false,
-        "__collapse": true
+        "__collapse": false
       },
       "children": {
         "true": [
@@ -188,7 +188,7 @@
                     "variable": "1",
                     "value": {
                       "type": "number",
-                      "value": 3
+                      "value": 20
                     }
                   },
                   "id": "a7f55b72-fe25-4090-99fe-f8878d606ec8",
