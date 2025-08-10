@@ -36,7 +36,7 @@
           }
         },
         "__collapseElse": false,
-        "__collapse": false
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -78,6 +78,37 @@
         "__collapse": true
       },
       "id": "6724e5db-b6b1-4ccc-9a1a-8fce6bf91268"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "1"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 3
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "5c49ccc0-83e0-4a4e-8c43-5f251d3c5ba8",
+              "__collapse": true
+            },
+            "id": "ae057b71-8afc-44d1-956e-fbc5474e7229"
+          }
+        ],
+        "false": []
+      },
+      "id": "8d6d02ec-109f-473d-85e6-f771ff59e268"
     }
   ],
   "playerHit1Script": [],

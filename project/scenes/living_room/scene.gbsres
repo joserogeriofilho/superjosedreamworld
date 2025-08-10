@@ -13,7 +13,8 @@
     "",
     "a15f35d7-d638-4267-96b7-a9318cc0f648",
     "097d63bf-1b37-4522-85be-a4d106b30877",
-    "7e36f234-0a0b-467a-8be5-6efc5b793319"
+    "7e36f234-0a0b-467a-8be5-6efc5b793319",
+    "c4c3ebdf-8462-45bc-9277-a0549aebed15"
   ],
   "collisions": "0fa2+018+0f20+008+0f20+008+0f22+04!007+0f4+002+0f1a+04!007+014+002+0f1a+04!00d+0f18+012+00e+0f18+0010+0f18+00a+0f!002+0f!002+0f18+00a+0f4+002+0f1d+002+0f97+",
   "autoFadeSpeed": 1,
@@ -57,7 +58,7 @@
           "value": 0
         },
         "speed": 1,
-        "__collapse": false,
+        "__collapse": true,
         "__comment": false
       },
       "id": "db5df8fa-67d5-4a37-b894-f6c0dc1f629e"

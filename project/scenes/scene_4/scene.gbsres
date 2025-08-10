@@ -20,9 +20,19 @@
   ],
   "autoFadeSpeed": 1,
   "playerSpriteSheetId": "bef77058-9dde-460e-8f50-b7e95c7b294b",
-  "script": [],
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "5c49ccc0-83e0-4a4e-8c43-5f251d3c5ba8",
+        "__collapse": true
+      },
+      "id": "81e9107e-b427-47b5-968e-503267c97786"
+    }
+  ],
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],
-  "collisions": "0f15+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+01!0f!0013+0f!0013+0f!0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f15+"
+  "collisions": "0f15+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+01!0f!0013+0f!0013+0f!0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f15+",
+  "autoFadeEventCollapse": true
 }

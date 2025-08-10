@@ -121,7 +121,7 @@
       "command": "EVENT_DEC_VALUE",
       "args": {
         "variable": "4",
-        "__collapse": false
+        "__collapse": true
       },
       "id": "f3f2a114-666e-4eb8-9b01-b0d0af875803",
       "children": {}
@@ -162,9 +162,22 @@
                 "type": "number",
                 "value": 10
               },
-              "__collapse": false
+              "__collapse": true
             },
             "id": "f32bc4c6-4994-4c62-b13c-4bdee4911722"
+          },
+          {
+            "command": "EVENT_ACTOR_EFFECTS",
+            "args": {
+              "effect": "splitOut",
+              "actorId": "$self$",
+              "distance": 20,
+              "speed": 2,
+              "time": 0.5,
+              "frames": 30,
+              "__collapse": true
+            },
+            "id": "66732e5c-ace1-4314-ae62-f6119c039f31"
           },
           {
             "command": "EVENT_ACTOR_DEACTIVATE",
