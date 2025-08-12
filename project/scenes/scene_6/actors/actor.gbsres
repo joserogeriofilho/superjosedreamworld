@@ -168,6 +168,153 @@
             "id": "473b20df-1431-4bd3-b611-1dbc41fc0705"
           },
           {
+            "command": "EVENT_SWITCH",
+            "args": {
+              "variable": "0",
+              "choices": 3,
+              "__collapseCase0": false,
+              "value0": 1,
+              "__collapseCase1": false,
+              "value1": 2,
+              "__collapseCase2": false,
+              "value2": 3,
+              "__collapseCase3": false,
+              "value3": 4,
+              "__collapseCase4": false,
+              "value4": 5,
+              "__collapseCase5": false,
+              "value5": 6,
+              "__collapseCase6": false,
+              "value6": 7,
+              "__collapseCase7": false,
+              "value7": 8,
+              "__collapseCase8": false,
+              "value8": 9,
+              "__collapseCase9": false,
+              "value9": 10,
+              "__collapseCase10": false,
+              "value10": 11,
+              "__collapseCase11": false,
+              "value11": 12,
+              "__collapseCase12": false,
+              "value12": 13,
+              "__collapseCase13": false,
+              "value13": 14,
+              "__collapseCase14": false,
+              "value14": 15,
+              "__collapseCase15": false,
+              "value15": 16,
+              "__collapseElse": false,
+              "__disableElse": true,
+              "__collapse": true,
+              "__label": "Translation Dialogue"
+            },
+            "children": {
+              "true0": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Derrotaste teu apego\nansioso.",
+                      "Não mais afogarás teus\namados com teu medo do\nabandono."
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 5,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "top",
+                    "clearPrevious": true,
+                    "showFrame": false,
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30,
+                    "__collapse": false
+                  },
+                  "id": "1f73d781-3f8a-48f7-a376-c796032c89b9"
+                }
+              ],
+              "true1": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Derrotaste tu apego\nansioso.",
+                      "Ya no ahogarás a tus\nseres queridos con tu\nmiedo al abandono."
+                    ],
+                    "__section": "layout",
+                    "avatarId": "",
+                    "minHeight": 5,
+                    "maxHeight": 9,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "top",
+                    "clearPrevious": true,
+                    "showFrame": false,
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30,
+                    "__collapse": false
+                  },
+                  "id": "19894170-4d3e-4778-a393-021e48c69fca"
+                }
+              ],
+              "true2": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "You have defeated your\nanxious attachment.",
+                      "You will no longer drown\nyour loved ones with\nfear of abandonment."
+                    ],
+                    "__section": "layout",
+                    "avatarId": "",
+                    "minHeight": 5,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "top",
+                    "clearPrevious": true,
+                    "showFrame": false,
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30,
+                    "__collapse": false
+                  },
+                  "id": "c1addc86-b70c-4aaf-b3a4-ce6366959dd8"
+                }
+              ],
+              "true3": [],
+              "true4": [],
+              "true5": [],
+              "true6": [],
+              "true7": [],
+              "true8": [],
+              "true9": [],
+              "true10": [],
+              "true11": [],
+              "true12": [],
+              "true13": [],
+              "true14": [],
+              "true15": [],
+              "false": []
+            },
+            "id": "1a284cd2-50cc-4121-b006-277638691c9e"
+          },
+          {
             "command": "EVENT_IF",
             "args": {
               "condition": {
@@ -183,7 +330,7 @@
               },
               "__collapseElse": true,
               "__disableElse": true,
-              "__collapse": true
+              "__collapse": false
             },
             "children": {
               "true": [

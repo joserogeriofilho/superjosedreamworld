@@ -22,6 +22,14 @@
   "playerSpriteSheetId": "bef77058-9dde-460e-8f50-b7e95c7b294b",
   "script": [
     {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "f34bc42f-1f8b-4075-9fcf-b09e6806d32f",
+        "__collapse": true
+      },
+      "id": "ec08a562-a982-4fa2-a976-18fc53ec8412"
+    },
+    {
       "command": "EVENT_IF",
       "args": {
         "condition": {
@@ -93,7 +101,8 @@
             "value": 3
           }
         },
-        "__collapseElse": true
+        "__collapseElse": true,
+        "__collapse": true
       },
       "children": {
         "true": [

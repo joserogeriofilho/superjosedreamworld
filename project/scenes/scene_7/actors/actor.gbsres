@@ -57,6 +57,35 @@
       "args": {
         "variable": "5"
       }
+    },
+    "730e21fc-a558-4980-8320-709021320815": {
+      "id": "730e21fc-a558-4980-8320-709021320815",
+      "args": {
+        "text": [
+          "Derrotaste tua adicção\nà dopamina.",
+          "Não mais te esconderás\ndo mundo real por\ndetrás de uma tela."
+        ]
+      }
+    },
+    "afa31e1b-1fe8-48c5-82d1-5269dc5d8406": {
+      "id": "afa31e1b-1fe8-48c5-82d1-5269dc5d8406",
+      "args": {
+        "__section": "text",
+        "text": [
+          "Derrotaste tu adicción\na la dopamina.",
+          "Ya no te esconderás\ndel mundo real detrás de\nuna pantalla."
+        ]
+      }
+    },
+    "17c5af45-e86a-4376-9d10-061b2cac4458": {
+      "id": "17c5af45-e86a-4376-9d10-061b2cac4458",
+      "args": {
+        "__section": "text",
+        "text": [
+          "You have defeated your\ndopamine addiction.",
+          "You will no longer hide\nfrom the real world\nbehind a screen."
+        ]
+      }
     }
   },
   "symbol": "actor_7",
