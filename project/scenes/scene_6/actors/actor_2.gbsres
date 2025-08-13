@@ -98,7 +98,7 @@
         },
         "moveType": "horizontal",
         "useCollisions": true,
-        "__collapse": false
+        "__collapse": true
       },
       "id": "a721d420-199b-4cab-954f-a329f6096a82",
       "children": {}
@@ -108,7 +108,7 @@
       "args": {
         "time": 0.3,
         "frames": 30,
-        "__collapse": false
+        "__collapse": true
       },
       "id": "9662afc8-7f41-48dd-91ce-2380eb8db31c",
       "children": {}

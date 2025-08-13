@@ -1,0 +1,190 @@
+{
+  "_resourceType": "script",
+  "id": "f784eeff-a87b-4e8d-bb90-fc6ec2b148ca",
+  "name": "Boss teleports",
+  "description": "",
+  "variables": {},
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Actor A"
+    }
+  },
+  "symbol": "script_9",
+  "script": [
+    {
+      "command": "EVENT_VARIABLE_MATH",
+      "args": {
+        "vectorX": "10",
+        "operation": "set",
+        "other": "rnd",
+        "vectorY": "L0",
+        "value": "0",
+        "minValue": 1,
+        "maxValue": 17,
+        "clamp": false,
+        "__collapse": true
+      },
+      "id": "066bce92-3f66-4e26-a500-97b48be46795"
+    },
+    {
+      "command": "EVENT_VARIABLE_MATH",
+      "args": {
+        "vectorX": "11",
+        "operation": "set",
+        "other": "rnd",
+        "vectorY": "L0",
+        "value": "0",
+        "minValue": 1,
+        "maxValue": 16,
+        "clamp": false,
+        "__collapse": true
+      },
+      "id": "cad92509-101a-4db0-9f35-1589f166e0d1"
+    },
+    {
+      "command": "EVENT_LOOP_WHILE",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "10"
+          },
+          "valueB": {
+            "type": "property",
+            "target": "player",
+            "property": "xpos"
+          }
+        },
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_VARIABLE_MATH",
+            "args": {
+              "vectorX": "10",
+              "operation": "set",
+              "other": "rnd",
+              "vectorY": "L0",
+              "value": "0",
+              "minValue": 1,
+              "maxValue": 17,
+              "clamp": false,
+              "__collapse": true
+            },
+            "id": "2fff13e7-f005-4a20-b4a0-1b6cdd04994c"
+          }
+        ]
+      },
+      "id": "14addb4b-be37-4423-8d72-fe0043517258"
+    },
+    {
+      "command": "EVENT_LOOP_WHILE",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "11"
+          },
+          "valueB": {
+            "type": "property",
+            "target": "player",
+            "property": "ypos"
+          }
+        },
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_VARIABLE_MATH",
+            "args": {
+              "vectorX": "11",
+              "operation": "set",
+              "other": "rnd",
+              "vectorY": "L0",
+              "value": "0",
+              "minValue": 1,
+              "maxValue": 16,
+              "clamp": false,
+              "__collapse": true
+            },
+            "id": "3d8d57c2-af6c-45eb-a12b-eaec64b30918"
+          }
+        ]
+      },
+      "id": "b9f65b07-650e-48d9-bab2-092065cffde2"
+    },
+    {
+      "command": "EVENT_ACTOR_EFFECTS",
+      "args": {
+        "effect": "flicker",
+        "actorId": "0",
+        "distance": 20,
+        "speed": 2,
+        "time": 0.5,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "4e5d7ac1-8ba9-4f06-ae85-3ee3e6d06d31"
+    },
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "0",
+        "__collapse": true
+      },
+      "id": "b40079fd-dd07-4409-9d23-408d974193c4"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "0",
+        "x": {
+          "type": "variable",
+          "value": "10"
+        },
+        "y": {
+          "type": "variable",
+          "value": "11"
+        },
+        "__collapse": true
+      },
+      "id": "7db97ad7-b292-4698-ac3e-4277130afaa6"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.3,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "620b29b6-1b8a-4d7c-a35e-16c56e03efd6",
+      "children": {}
+    },
+    {
+      "command": "EVENT_ACTOR_SHOW",
+      "args": {
+        "actorId": "0",
+        "__collapse": true
+      },
+      "id": "2d9d23b0-642a-4f46-bc1e-d19af7a2d872"
+    },
+    {
+      "command": "EVENT_ACTOR_EFFECTS",
+      "args": {
+        "effect": "flicker",
+        "actorId": "0",
+        "distance": 20,
+        "speed": 2,
+        "time": 0.5,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "1ab8893d-e7fa-424f-a3c3-8d3258d9f4c4"
+    }
+  ]
+}

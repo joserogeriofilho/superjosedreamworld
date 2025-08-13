@@ -90,6 +90,18 @@
         "__collapse": true
       },
       "id": "d7829107-7331-4424-afd3-795c68c26fda"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "9",
+        "value": {
+          "type": "number",
+          "value": 7
+        },
+        "__collapse": true
+      },
+      "id": "787a4c09-a25c-43e9-9ecd-dba3c106c8e0"
     }
   ]
 }

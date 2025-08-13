@@ -34,7 +34,7 @@
     {
       "id": "6",
       "name": "enemy_3_life",
-      "symbol": "var_enemy_3_life"
+      "symbol": "var_enemy_life_0"
     },
     {
       "id": "7",
@@ -45,6 +45,26 @@
       "id": "8",
       "name": "first_time_in_scene_hall",
       "symbol": "var_first_time_in_scene_hal"
+    },
+    {
+      "id": "9",
+      "name": "boss_life",
+      "symbol": "var_boss_life"
+    },
+    {
+      "id": "10",
+      "name": "boss_teleport_x",
+      "symbol": "var_boss_teleport_x"
+    },
+    {
+      "id": "11",
+      "name": "boss_teleport_y",
+      "symbol": "var_boss_teleport_y"
+    },
+    {
+      "id": "12",
+      "name": "should_boss_teleport",
+      "symbol": "var_should_boss_teleport"
     }
   ]
 }

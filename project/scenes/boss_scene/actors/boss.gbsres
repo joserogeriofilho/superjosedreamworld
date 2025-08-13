@@ -1,7 +1,7 @@
 {
   "_resourceType": "actor",
-  "id": "662fff40-db80-48d8-8789-cead292aeb03",
-  "name": "",
+  "id": "26cb0a71-1d99-4d98-8195-6cbdab03cbae",
+  "name": "Boss",
   "frame": 0,
   "animate": false,
   "spriteSheetId": "027fcb4a-3fb5-4ca2-898b-6d9268da68ee",
@@ -14,9 +14,18 @@
   "persistent": false,
   "collisionGroup": "1",
   "prefabScriptOverrides": {},
-  "symbol": "actor_4",
+  "symbol": "actor_30",
   "script": [],
   "startScript": [
+    {
+      "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+      "args": {
+        "actorId": "$self$",
+        "speed": 1,
+        "__collapse": true
+      },
+      "id": "2b724dff-c992-4ed1-9d0c-67df1f5a4ffb"
+    },
     {
       "command": "EVENT_IF",
       "args": {
@@ -24,7 +33,7 @@
           "type": "gt",
           "valueA": {
             "type": "variable",
-            "value": "4"
+            "value": "9"
           },
           "valueB": {
             "type": "number",
@@ -32,7 +41,8 @@
           }
         },
         "__collapseElse": false,
-        "__collapse": false
+        "__collapse": true,
+        "__comment": false
       },
       "children": {
         "true": [
@@ -44,7 +54,7 @@
               "frames": 8,
               "__scriptTabs": "end",
               "units": "frames",
-              "__collapse": true
+              "__collapse": false
             },
             "children": {
               "script": [
@@ -58,12 +68,12 @@
                     },
                     "__collapse": true
                   },
-                  "id": "8ba8374a-db0a-440d-b8e3-01c38cf06fb7",
+                  "id": "9aff46d9-9b67-4b5f-b4e5-a93c4910de75",
                   "children": {}
                 }
               ]
             },
-            "id": "8715665f-5650-46ec-b5d2-20769798b759"
+            "id": "0a8e2e20-0822-4983-b7c6-55390c4c7eb9"
           }
         ],
         "false": [
@@ -73,12 +83,12 @@
               "actorId": "$self$",
               "__collapse": true
             },
-            "id": "ba2d8292-9230-4db2-b879-74917b643e49",
+            "id": "954437b9-65f6-4df5-b10b-ea0dbd3ddf6a",
             "children": {}
           }
         ]
       },
-      "id": "49b068a2-e57b-4b40-9823-8debdb38a430"
+      "id": "87d2e04e-1c2a-49f4-897d-d9248743f560"
     }
   ],
   "updateScript": [
@@ -100,7 +110,7 @@
         "useCollisions": true,
         "__collapse": true
       },
-      "id": "9534d38c-fbe1-47f4-ade1-cda812d2c2fc",
+      "id": "467d066e-cd00-4f8f-bee9-1c57ba0677b4",
       "children": {}
     },
     {
@@ -110,8 +120,54 @@
         "frames": 30,
         "__collapse": true
       },
-      "id": "e0f744d4-e869-4e3b-819b-2b0377ee7b81",
-      "children": {}
+      "id": "5a0eb546-aca9-42e6-9267-92cd92b34a2a"
+    },
+    {
+      "command": "EVENT_VARIABLE_MATH",
+      "args": {
+        "vectorX": "12",
+        "operation": "set",
+        "other": "rnd",
+        "vectorY": "L0",
+        "value": "0",
+        "minValue": 1,
+        "maxValue": 10,
+        "clamp": false,
+        "__collapse": true
+      },
+      "id": "c0aa36bf-9e0a-4928-92f4-c28f32dd17a5"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "lte",
+          "valueA": {
+            "type": "variable",
+            "value": "12"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 3
+          }
+        },
+        "__collapseElse": true,
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "f784eeff-a87b-4e8d-bb90-fc6ec2b148ca",
+              "__collapse": false
+            },
+            "id": "b027a8f9-74de-4886-b8e4-248085541de0"
+          }
+        ],
+        "false": []
+      },
+      "id": "ddd96ce7-6413-4ebd-8289-00eae6e2b084"
     }
   ],
   "hit1Script": [],
@@ -120,10 +176,10 @@
     {
       "command": "EVENT_DEC_VALUE",
       "args": {
-        "variable": "4",
-        "__collapse": false
+        "variable": "9",
+        "__collapse": true
       },
-      "id": "f3f2a114-666e-4eb8-9b01-b0d0af875803",
+      "id": "b0fb8a4d-5499-42a5-841d-1f8d425d242b",
       "children": {}
     },
     {
@@ -133,7 +189,7 @@
           "type": "lte",
           "valueA": {
             "type": "variable",
-            "value": "4"
+            "value": "9"
           },
           "valueB": {
             "type": "number",
@@ -141,7 +197,7 @@
           }
         },
         "__collapseElse": false,
-        "__collapse": false
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -151,20 +207,8 @@
               "timer": 1,
               "__collapse": true
             },
-            "id": "eb013552-1720-4c98-8116-687fa150d591",
+            "id": "fc627385-faa0-481a-b9e6-ecf0aa411cd7",
             "children": {}
-          },
-          {
-            "command": "EVENT_SET_VALUE",
-            "args": {
-              "variable": "1",
-              "value": {
-                "type": "number",
-                "value": 10
-              },
-              "__collapse": true
-            },
-            "id": "f32bc4c6-4994-4c62-b13c-4bdee4911722"
           },
           {
             "command": "EVENT_ACTOR_EFFECTS",
@@ -177,7 +221,7 @@
               "frames": 30,
               "__collapse": true
             },
-            "id": "66732e5c-ace1-4314-ae62-f6119c039f31"
+            "id": "e01af9ba-3da5-43af-833b-1807eeba6176"
           },
           {
             "command": "EVENT_SWITCH",
@@ -186,9 +230,9 @@
               "choices": 3,
               "__collapseCase0": false,
               "value0": 1,
-              "__collapseCase1": true,
+              "__collapseCase1": false,
               "value1": 2,
-              "__collapseCase2": true,
+              "__collapseCase2": false,
               "value2": 3,
               "__collapseCase3": false,
               "value3": 4,
@@ -227,12 +271,12 @@
                   "command": "EVENT_TEXT",
                   "args": {
                     "text": [
-                      "Derrotaste o medo do\ndesemprego!",
-                      "Terás muito mais\ntempo para viver e amar."
+                      "Derrotaste teu apego\nansioso.",
+                      "Não mais afogarás teus\namados com teu medo do\nabandono."
                     ],
                     "__section": "text",
                     "avatarId": "",
-                    "minHeight": 4,
+                    "minHeight": 5,
                     "maxHeight": 7,
                     "textX": 1,
                     "textY": 1,
@@ -248,7 +292,7 @@
                     "closeDelayFrames": 30,
                     "__collapse": false
                   },
-                  "id": "efb23fa9-5f97-4e79-b97a-1a8e5feb1c01"
+                  "id": "7427d8b5-1172-4167-ac3d-cb0395b21744"
                 }
               ],
               "true1": [
@@ -256,13 +300,13 @@
                   "command": "EVENT_TEXT",
                   "args": {
                     "text": [
-                      "Le has ganado al miedo\ndel desempleo!",
-                      "Tendrás más tiempo para\namar y vivir."
+                      "Derrotaste tu apego\nansioso.",
+                      "Ya no ahogarás a tus\nseres queridos con tu\nmiedo al abandono."
                     ],
-                    "__section": "text",
+                    "__section": "layout",
                     "avatarId": "",
-                    "minHeight": 4,
-                    "maxHeight": 7,
+                    "minHeight": 5,
+                    "maxHeight": 9,
                     "textX": 1,
                     "textY": 1,
                     "textHeight": 5,
@@ -277,7 +321,7 @@
                     "closeDelayFrames": 30,
                     "__collapse": false
                   },
-                  "id": "a237292a-2be8-412c-85bf-4095a622f838"
+                  "id": "745cebb3-393a-49e3-a5ff-771174f3baa6"
                 }
               ],
               "true2": [
@@ -285,12 +329,12 @@
                   "command": "EVENT_TEXT",
                   "args": {
                     "text": [
-                      "You have defeated the\nfear of unemployment!",
-                      "You will have more time\nto live and love."
+                      "You have defeated your\nanxious attachment.",
+                      "You will no longer drown\nyour loved ones with\nfear of abandonment."
                     ],
                     "__section": "layout",
                     "avatarId": "",
-                    "minHeight": 4,
+                    "minHeight": 5,
                     "maxHeight": 7,
                     "textX": 1,
                     "textY": 1,
@@ -306,7 +350,7 @@
                     "closeDelayFrames": 30,
                     "__collapse": false
                   },
-                  "id": "31724439-75d1-4541-b46a-8695d1352142"
+                  "id": "ad94119d-ded5-4be8-8750-77bfafd102e9"
                 }
               ],
               "true3": [],
@@ -324,7 +368,44 @@
               "true15": [],
               "false": []
             },
-            "id": "d3c4e989-fb34-40dd-8f3b-46250837b5f6"
+            "id": "c100ca4f-a367-4969-a330-1c204c248466"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "lte",
+                "valueA": {
+                  "type": "variable",
+                  "value": "7"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 0
+                }
+              },
+              "__collapseElse": true,
+              "__disableElse": true,
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "1",
+                    "value": {
+                      "type": "number",
+                      "value": 30
+                    }
+                  },
+                  "id": "56ebc92d-8920-44a5-8859-e4440a88cd3c",
+                  "children": {}
+                }
+              ],
+              "false": []
+            },
+            "id": "7782879e-1dc3-460a-97ef-c207e638b104"
           },
           {
             "command": "EVENT_ACTOR_DEACTIVATE",
@@ -332,7 +413,7 @@
               "actorId": "$self$",
               "__collapse": true
             },
-            "id": "8b4ab66d-d579-4527-8544-0eea9fc33777",
+            "id": "a0029e41-def2-4674-bcc1-feb9189ea8de",
             "children": {}
           }
         ],
@@ -343,15 +424,15 @@
               "customEventId": "97348a04-4181-40f9-953a-d9c0ac525de0",
               "__collapse": true
             },
-            "id": "dde7e87d-2984-44c6-8b89-a4c383303c4b",
+            "id": "22691c1b-12aa-424d-b51c-5fa8c30bb0ea",
             "children": {}
           }
         ]
       },
-      "id": "d903fb68-6a2a-4c2a-873e-ce80efb92ab6"
+      "id": "dee5601f-da19-450e-9132-aa795ece595e"
     }
   ],
-  "x": 10,
-  "y": 7,
-  "_index": 3
+  "x": 3,
+  "y": 12,
+  "_index": 0
 }
