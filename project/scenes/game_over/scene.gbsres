@@ -1,0 +1,76 @@
+{
+  "_resourceType": "scene",
+  "id": "6e93c511-adfd-48ac-a919-56beaa7c2b13",
+  "_index": 9,
+  "name": "Game over",
+  "backgroundId": "e3bbce36-7aa4-4ca3-b69f-5e8d42852cd4",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "LOGO",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_10",
+  "x": 861.7142857142857,
+  "y": 80,
+  "script": [
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "7c94f11d-d57b-4428-b6d3-51e363c10858",
+        "__collapse": true
+      },
+      "id": "9fafcb83-684f-4b6e-b119-6db3c9d24ea6"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 4,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "8acc8a32-1340-4a8d-abda-6913ef0ba0c5"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b",
+          "a",
+          "start"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "a0e3517e-0f87-43ff-835b-f5554389b41c",
+              "x": {
+                "type": "number",
+                "value": 3
+              },
+              "y": {
+                "type": "number",
+                "value": 5
+              },
+              "direction": "",
+              "fadeSpeed": 4
+            },
+            "id": "014ebe69-5417-47f8-9b43-d75bc0d31d21"
+          }
+        ]
+      },
+      "id": "5a969a92-a937-4977-84a8-aeb914b54809"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "autoFadeEventCollapse": true
+}

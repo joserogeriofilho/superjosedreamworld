@@ -1,0 +1,76 @@
+{
+  "_resourceType": "scene",
+  "id": "60cb14b9-6dc5-43e5-a013-da1706d5272a",
+  "_index": 8,
+  "name": "You win scene",
+  "backgroundId": "3f69a406-60d5-4d9d-b8a9-b46e6275d74c",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "LOGO",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_9",
+  "x": 304,
+  "y": 888,
+  "script": [
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "c05d85b2-ffea-476c-b002-41d4cd777051",
+        "__collapse": true
+      },
+      "id": "90c9a756-994f-4c45-b19d-9a882f1a7b88"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "4c42a644-1592-41ed-a4c2-d67846b0134c"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b",
+          "a",
+          "start"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "a0e3517e-0f87-43ff-835b-f5554389b41c",
+              "x": {
+                "type": "number",
+                "value": 3
+              },
+              "y": {
+                "type": "number",
+                "value": 5
+              },
+              "direction": "",
+              "fadeSpeed": 4
+            },
+            "id": "43e09ac8-272e-4d88-9180-bf46a57b62d0"
+          }
+        ]
+      },
+      "id": "217bb1db-f133-415d-b010-a9922731b1b3"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "autoFadeEventCollapse": true
+}

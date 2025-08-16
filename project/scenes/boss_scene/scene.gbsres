@@ -31,14 +31,6 @@
         "__collapse": true
       },
       "id": "06941574-6757-4b24-98f2-33e01f83ef95"
-    },
-    {
-      "command": "EVENT_CALL_CUSTOM_EVENT",
-      "args": {
-        "customEventId": "3303ac40-3138-4d6e-8f6b-12f65ec66959",
-        "__collapse": true
-      },
-      "id": "42118e22-de08-42c4-a589-275f44dfd8fa"
     }
   ],
   "playerHit1Script": [],

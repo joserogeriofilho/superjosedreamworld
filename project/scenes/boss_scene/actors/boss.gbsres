@@ -54,7 +54,7 @@
               "frames": 8,
               "__scriptTabs": "end",
               "units": "frames",
-              "__collapse": false
+              "__collapse": true
             },
             "children": {
               "script": [
@@ -66,7 +66,7 @@
                       "type": "number",
                       "value": 1
                     },
-                    "__collapse": true
+                    "__collapse": false
                   },
                   "id": "9aff46d9-9b67-4b5f-b4e5-a93c4910de75",
                   "children": {}
@@ -152,7 +152,7 @@
           }
         },
         "__collapseElse": true,
-        "__collapse": false
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -197,7 +197,7 @@
           }
         },
         "__collapseElse": false,
-        "__collapse": true
+        "__collapse": false
       },
       "children": {
         "true": [
@@ -262,7 +262,7 @@
               "value15": 16,
               "__collapseElse": false,
               "__disableElse": true,
-              "__collapse": true,
+              "__collapse": false,
               "__label": "Translation Dialogue"
             },
             "children": {
@@ -271,8 +271,7 @@
                   "command": "EVENT_TEXT",
                   "args": {
                     "text": [
-                      "Derrotaste teu apego\nansioso.",
-                      "Não mais afogarás teus\namados com teu medo do\nabandono."
+                      "Derrotaste o chefe!"
                     ],
                     "__section": "text",
                     "avatarId": "",
@@ -300,10 +299,9 @@
                   "command": "EVENT_TEXT",
                   "args": {
                     "text": [
-                      "Derrotaste tu apego\nansioso.",
-                      "Ya no ahogarás a tus\nseres queridos con tu\nmiedo al abandono."
+                      "Derrotaste el jefe!"
                     ],
-                    "__section": "layout",
+                    "__section": "text",
                     "avatarId": "",
                     "minHeight": 5,
                     "maxHeight": 9,
@@ -329,10 +327,9 @@
                   "command": "EVENT_TEXT",
                   "args": {
                     "text": [
-                      "You have defeated your\nanxious attachment.",
-                      "You will no longer drown\nyour loved ones with\nfear of abandonment."
+                      "You have defeated the\nboss!"
                     ],
-                    "__section": "layout",
+                    "__section": "text",
                     "avatarId": "",
                     "minHeight": 5,
                     "maxHeight": 7,
@@ -371,50 +368,41 @@
             "id": "c100ca4f-a367-4969-a330-1c204c248466"
           },
           {
-            "command": "EVENT_IF",
+            "command": "EVENT_SET_VALUE",
             "args": {
-              "condition": {
-                "type": "lte",
-                "valueA": {
-                  "type": "variable",
-                  "value": "7"
-                },
-                "valueB": {
-                  "type": "number",
-                  "value": 0
-                }
-              },
-              "__collapseElse": true,
-              "__disableElse": true,
-              "__collapse": false
+              "variable": "1",
+              "value": {
+                "type": "number",
+                "value": 30
+              }
             },
-            "children": {
-              "true": [
-                {
-                  "command": "EVENT_SET_VALUE",
-                  "args": {
-                    "variable": "1",
-                    "value": {
-                      "type": "number",
-                      "value": 30
-                    }
-                  },
-                  "id": "56ebc92d-8920-44a5-8859-e4440a88cd3c",
-                  "children": {}
-                }
-              ],
-              "false": []
-            },
-            "id": "7782879e-1dc3-460a-97ef-c207e638b104"
+            "id": "56ebc92d-8920-44a5-8859-e4440a88cd3c",
+            "children": {}
           },
           {
-            "command": "EVENT_ACTOR_DEACTIVATE",
+            "command": "EVENT_ACTOR_HIDE",
             "args": {
               "actorId": "$self$",
               "__collapse": true
             },
-            "id": "a0029e41-def2-4674-bcc1-feb9189ea8de",
-            "children": {}
+            "id": "631cc963-d33a-49b1-970a-cc259d0a82d1"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "60cb14b9-6dc5-43e5-a013-da1706d5272a",
+              "x": {
+                "type": "number",
+                "value": 1
+              },
+              "y": {
+                "type": "number",
+                "value": 2
+              },
+              "direction": "",
+              "fadeSpeed": 4
+            },
+            "id": "88362135-d899-42b6-a2d0-f530d6b456a0"
           }
         ],
         "false": [

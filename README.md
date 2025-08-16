@@ -1,0 +1,7 @@
+## Screenshots
+
+| Language selection screen                                                                                                                            | First scene                                                                                                                               |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| <img width="639" height="617" alt="Game language selection" src="https://github.com/user-attachments/assets/fd1e95c8-6e5f-4a5a-8659-fb5331893309" /> | <img width="641" height="612" alt="Hero's house" src="https://github.com/user-attachments/assets/6e7129e2-017a-44a4-9122-4c29fb2c4276" /> |
+| Getting instructions from NPCs                                                                                                                       | First battle                                                                                                                              |
+| <img width="639" height="617" alt="NPC gives instruction" src="https://github.com/user-attachments/assets/ff2a0667-a0e5-4162-973d-d06c2d6d01f4" />   | <img width="639" height="617" alt="First battle" src="https://github.com/user-attachments/assets/c9e668d0-6820-4025-826b-b9f4113feb60" /> |

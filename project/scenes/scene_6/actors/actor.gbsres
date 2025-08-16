@@ -32,7 +32,7 @@
           }
         },
         "__collapseElse": false,
-        "__collapse": false
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -206,7 +206,7 @@
               "value15": 16,
               "__collapseElse": false,
               "__disableElse": true,
-              "__collapse": true,
+              "__collapse": false,
               "__label": "Translation Dialogue"
             },
             "children": {
@@ -216,7 +216,7 @@
                   "args": {
                     "text": [
                       "Derrotaste teu apego\nansioso.",
-                      "Não mais afogarás teus\namados com teu medo do\nabandono."
+                      "Não te desesperarás\nmais por teu medo do\nabandono."
                     ],
                     "__section": "text",
                     "avatarId": "",
@@ -245,9 +245,9 @@
                   "args": {
                     "text": [
                       "Derrotaste tu apego\nansioso.",
-                      "Ya no ahogarás a tus\nseres queridos con tu\nmiedo al abandono."
+                      "Ya no desesperarás con\ntu miedo al abandono."
                     ],
-                    "__section": "layout",
+                    "__section": "text",
                     "avatarId": "",
                     "minHeight": 5,
                     "maxHeight": 9,
@@ -274,9 +274,9 @@
                   "args": {
                     "text": [
                       "You have defeated your\nanxious attachment.",
-                      "You will no longer drown\nyour loved ones with\nfear of abandonment."
+                      "You will no longer despair\nover your fear\nof abandomnment."
                     ],
-                    "__section": "layout",
+                    "__section": "text",
                     "avatarId": "",
                     "minHeight": 5,
                     "maxHeight": 7,
@@ -330,7 +330,7 @@
               },
               "__collapseElse": true,
               "__disableElse": true,
-              "__collapse": false
+              "__collapse": true
             },
             "children": {
               "true": [
