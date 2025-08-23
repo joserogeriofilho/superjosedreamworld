@@ -55,7 +55,7 @@
         "value15": 16,
         "__collapseElse": false,
         "__disableElse": true,
-        "__collapse": false,
+        "__collapse": true,
         "__label": "Translation Dialogue"
       },
       "children": {
