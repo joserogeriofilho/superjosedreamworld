@@ -13,8 +13,8 @@
   "collisions": "",
   "autoFadeSpeed": 1,
   "symbol": "scene_1",
-  "x": 96,
-  "y": 104,
+  "x": 520,
+  "y": 184,
   "script": [
     {
       "command": "EVENT_MUSIC_STOP",
@@ -31,7 +31,7 @@
         ],
         "override": true,
         "__scriptTabs": "press",
-        "__collapse": true
+        "__collapse": false
       },
       "children": {
         "true": [
@@ -152,7 +152,7 @@
           {
             "command": "EVENT_SWITCH_SCENE",
             "args": {
-              "sceneId": "232caf69-7445-427b-9783-1e48d1d25d58",
+              "sceneId": "287de8a1-eb12-407c-b3c8-95e6098ea73c",
               "x": {
                 "type": "number",
                 "value": 5
@@ -163,7 +163,7 @@
               },
               "direction": "",
               "fadeSpeed": "2",
-              "__collapse": true
+              "__collapse": false
             },
             "id": "dcca5c06-0b34-4527-8893-e14e159a7f3b"
           }

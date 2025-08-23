@@ -1,13 +1,13 @@
 {
   "_resourceType": "background",
-  "id": "e3bbce36-7aa4-4ca3-b69f-5e8d42852cd4",
-  "name": "game-over",
-  "symbol": "bg_game_over",
+  "id": "a44cc51a-e1ca-4b49-8fd5-95db9273c02c",
+  "name": "logo-screen",
+  "symbol": "bg_logo_screen",
   "width": 20,
   "height": 18,
   "imageWidth": 160,
   "imageHeight": 144,
-  "filename": "game-over.png",
+  "filename": "logo-screen.png",
   "tileColors": "",
   "autoColor": true
 }

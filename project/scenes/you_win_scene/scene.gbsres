@@ -7,14 +7,14 @@
   "tilesetId": "",
   "width": 20,
   "height": 18,
-  "type": "LOGO",
+  "type": "POINTNCLICK",
   "paletteIds": [],
   "spritePaletteIds": [],
   "collisions": "",
   "autoFadeSpeed": 1,
   "symbol": "scene_9",
-  "x": 304,
-  "y": 888,
+  "x": 496,
+  "y": 1456,
   "script": [
     {
       "command": "EVENT_MUSIC_PLAY",
@@ -72,5 +72,6 @@
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],
-  "autoFadeEventCollapse": true
+  "autoFadeEventCollapse": true,
+  "playerSpriteSheetId": "bbf8c8a3-36dd-4d1c-b659-15bfa5e6f87c"
 }

@@ -480,6 +480,21 @@
             "id": "7cc2ad87-024f-4715-8d5d-38a46f66ff5e"
           },
           {
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "f34bc42f-1f8b-4075-9fcf-b09e6806d32f",
+              "x": {
+                "type": "number",
+                "value": 9
+              },
+              "y": {
+                "type": "number",
+                "value": 9
+              }
+            },
+            "id": "61b71907-80b3-4d32-a11e-d7767cd6adde"
+          },
+          {
             "command": "EVENT_ACTOR_SHOW",
             "args": {
               "actorId": "f34bc42f-1f8b-4075-9fcf-b09e6806d32f",

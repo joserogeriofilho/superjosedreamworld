@@ -1,0 +1,66 @@
+{
+  "_resourceType": "scene",
+  "id": "287de8a1-eb12-407c-b3c8-95e6098ea73c",
+  "_index": 10,
+  "name": "Title screen",
+  "backgroundId": "a44cc51a-e1ca-4b49-8fd5-95db9273c02c",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "LOGO",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_11",
+  "x": 520,
+  "y": 384,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b",
+          "a",
+          "start"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "232caf69-7445-427b-9783-1e48d1d25d58",
+              "x": {
+                "type": "number",
+                "value": 5
+              },
+              "y": {
+                "type": "number",
+                "value": 5
+              },
+              "direction": "",
+              "fadeSpeed": "2",
+              "__collapse": true
+            },
+            "id": "06b5e3d9-44ce-4e25-be9d-0f4f71772ece"
+          }
+        ]
+      },
+      "id": "5e19048b-8c41-40bf-a22b-25ccdbb87827"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "85130d7d-4201-4466-acaa-cc824d132b15"
+      },
+      "id": "15c91f9a-8479-4467-b731-a2a789143088"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}
