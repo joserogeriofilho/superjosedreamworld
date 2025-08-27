@@ -8,7 +8,7 @@
   "startDirection": "right",
   "showCollisionExtraTiles": false,
   "sgbEnabled": false,
-  "customHead": "",
+  "customHead": "<style type=\"text/css\">\n  body {\n    background-color: #dbdbdb;\n  }\n  #game {\n    align-items: center;\n  }  \n</style>",
   "defaultBackgroundPaletteIds": [
     "default-bg-1",
     "default-bg-2",
