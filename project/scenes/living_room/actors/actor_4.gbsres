@@ -1,10 +1,10 @@
 {
   "_resourceType": "actor",
-  "id": "8a67e0f8-a569-4193-ad06-7b3845b1dd1c",
+  "id": "932fc265-9faa-447b-8ce6-bab3d3ef5bd9",
   "name": "",
   "frame": 0,
   "animate": false,
-  "spriteSheetId": "8a4c32a7-b331-4f26-9d53-36f38fae7e4a",
+  "spriteSheetId": "0448ae3b-0f49-4b47-86f8-2bb10fbf9ff4",
   "prefabId": "",
   "direction": "down",
   "moveSpeed": 1,
@@ -14,18 +14,18 @@
   "persistent": false,
   "collisionGroup": "",
   "prefabScriptOverrides": {},
-  "symbol": "actor_20",
+  "symbol": "actor_22",
   "script": [
     {
       "command": "EVENT_SWITCH",
       "args": {
         "variable": "0",
         "choices": 3,
-        "__collapseCase0": false,
+        "__collapseCase0": true,
         "value0": 1,
-        "__collapseCase1": false,
+        "__collapseCase1": true,
         "value1": 2,
-        "__collapseCase2": false,
+        "__collapseCase2": true,
         "value2": 3,
         "__collapseCase3": false,
         "value3": 4,
@@ -64,7 +64,7 @@
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "Tenho que pagar as\ncontas..."
+                "Ah, minhas cápsulas de\nmaracujá. Isso vai me\najudar a relaxar."
               ],
               "__section": "text",
               "avatarId": "",
@@ -84,7 +84,7 @@
               "closeDelayFrames": 30,
               "__collapse": false
             },
-            "id": "ea4a447d-e537-43df-af2c-c96f4a296422"
+            "id": "d9870ca5-d19c-48ed-b79a-0d9daa89a6a7"
           }
         ],
         "true1": [
@@ -92,7 +92,7 @@
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "Tengo que pagar las\ncuentas..."
+                "Ah, aquí están mis\npastillas de maracuyá.\nEso me ayudará\na relajar."
               ],
               "__section": "text",
               "avatarId": "",
@@ -112,7 +112,7 @@
               "closeDelayFrames": 30,
               "__collapse": false
             },
-            "id": "4b8003e4-9819-4dd6-bd63-84ab6786b10b"
+            "id": "bba491d5-f333-4546-a428-62b4d9f2cb7a"
           }
         ],
         "true2": [
@@ -120,7 +120,7 @@
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "I have to pay my bills..."
+                "Oh, here's my passion\nfruit capsules. This will\nhelp me relax."
               ],
               "__section": "text",
               "avatarId": "",
@@ -139,7 +139,7 @@
               "closeDelayTime": 0.5,
               "closeDelayFrames": 30
             },
-            "id": "1b1da00c-157e-4cff-9133-86479cddcf18"
+            "id": "4a7c37ca-d68d-4846-b8fc-39313702a96b"
           }
         ],
         "true3": [],
@@ -157,7 +157,19 @@
         "true15": [],
         "false": []
       },
-      "id": "b66ba38c-d9aa-42a7-93a1-07deb5cfa181"
+      "id": "dab950b2-386e-43e6-b4b1-d9e89b475cbe"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "1",
+        "value": {
+          "type": "number",
+          "value": 1
+        },
+        "__collapse": true
+      },
+      "id": "87cd124a-8ae3-4e86-8111-8c55d05b6a90"
     }
   ],
   "startScript": [],
@@ -165,7 +177,7 @@
   "hit1Script": [],
   "hit2Script": [],
   "hit3Script": [],
-  "x": 3,
-  "y": 9,
+  "x": 15,
+  "y": 7,
   "_index": 3
 }

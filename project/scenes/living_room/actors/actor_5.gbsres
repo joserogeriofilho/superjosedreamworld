@@ -1,10 +1,10 @@
 {
   "_resourceType": "actor",
-  "id": "932fc265-9faa-447b-8ce6-bab3d3ef5bd9",
+  "id": "0349df36-3514-4f68-8c9e-d61425f9e5f5",
   "name": "",
   "frame": 0,
   "animate": false,
-  "spriteSheetId": "0448ae3b-0f49-4b47-86f8-2bb10fbf9ff4",
+  "spriteSheetId": "bc8a5b6f-53b5-40fb-a355-6e977e5eda94",
   "prefabId": "",
   "direction": "down",
   "moveSpeed": 1,
@@ -14,18 +14,18 @@
   "persistent": false,
   "collisionGroup": "",
   "prefabScriptOverrides": {},
-  "symbol": "actor_22",
+  "symbol": "actor_1",
   "script": [
     {
       "command": "EVENT_SWITCH",
       "args": {
         "variable": "0",
         "choices": 3,
-        "__collapseCase0": true,
+        "__collapseCase0": false,
         "value0": 1,
-        "__collapseCase1": true,
+        "__collapseCase1": false,
         "value1": 2,
-        "__collapseCase2": true,
+        "__collapseCase2": false,
         "value2": 3,
         "__collapseCase3": false,
         "value3": 4,
@@ -64,7 +64,7 @@
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "Ah, minhas cápsulas de\nmaracujá. Isso vai me\najudar a relaxar."
+                "Tenho que regar\nessa planta..."
               ],
               "__section": "text",
               "avatarId": "",
@@ -84,7 +84,7 @@
               "closeDelayFrames": 30,
               "__collapse": false
             },
-            "id": "d9870ca5-d19c-48ed-b79a-0d9daa89a6a7"
+            "id": "02d319dd-4bd8-46d3-a763-0063690487fe"
           }
         ],
         "true1": [
@@ -92,7 +92,7 @@
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "Ah, aquí están mis\npastillas de maracuyá.\nEso me ayudará\na relajar."
+                "Tengo que regar\nesta planta...."
               ],
               "__section": "text",
               "avatarId": "",
@@ -112,7 +112,7 @@
               "closeDelayFrames": 30,
               "__collapse": false
             },
-            "id": "bba491d5-f333-4546-a428-62b4d9f2cb7a"
+            "id": "37988300-3d5c-4d94-8bc0-8d8c9fced9af"
           }
         ],
         "true2": [
@@ -120,7 +120,7 @@
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "Oh, here's my passion\nfruit capsules. This will\nhelp me relax."
+                "I need to water\nthis plant..."
               ],
               "__section": "text",
               "avatarId": "",
@@ -137,9 +137,10 @@
               "closeWhen": "key",
               "closeButton": "a",
               "closeDelayTime": 0.5,
-              "closeDelayFrames": 30
+              "closeDelayFrames": 30,
+              "__collapse": false
             },
-            "id": "4a7c37ca-d68d-4846-b8fc-39313702a96b"
+            "id": "376b2302-f045-4741-b3ae-772f38adb431"
           }
         ],
         "true3": [],
@@ -157,19 +158,7 @@
         "true15": [],
         "false": []
       },
-      "id": "dab950b2-386e-43e6-b4b1-d9e89b475cbe"
-    },
-    {
-      "command": "EVENT_SET_VALUE",
-      "args": {
-        "variable": "1",
-        "value": {
-          "type": "number",
-          "value": 1
-        },
-        "__collapse": true
-      },
-      "id": "87cd124a-8ae3-4e86-8111-8c55d05b6a90"
+      "id": "31f21f14-2a10-4760-b144-972dacf390c9"
     }
   ],
   "startScript": [],
@@ -177,7 +166,7 @@
   "hit1Script": [],
   "hit2Script": [],
   "hit3Script": [],
-  "x": 15,
+  "x": 16,
   "y": 7,
   "_index": 4
 }
