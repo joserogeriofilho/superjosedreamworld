@@ -1,3 +1,22 @@
+# Super José DreamWorld
+
+Check out the game's [itch.io page](https://rogersama.itch.io/super-jose-dreamworld).
+
+## Description
+
+It was supposed to be just a normal ciesta...
+In this demo, you play as a guy who falls asleep in his couch only to find himself trapped in his own dream world. To wake up, he'll have to face his grown up fears in the form of pixelated enemies.
+
+This game was made to the [Game Boy Competition 2025](https://itch.io/jam/gbcompo25) jam.
+
+This is my first game ever. Be kind <3
+
+I hope you enjoy it!
+
+Credits
+Game Boy Music Loop Pack by Doug T: background music for title screen, level 1 dungeon and boss battle;
+Free Gameboy UGE Music Asset Pack by beatscribe: victory and game over jingles;
+
 ## Screenshots
 
 | Language selection screen                                                                                                                            | First scene                                                                                                                               |
