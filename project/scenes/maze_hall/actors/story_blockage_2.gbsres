@@ -55,7 +55,7 @@
         "value15": 16,
         "__collapseElse": false,
         "__disableElse": true,
-        "__collapse": false,
+        "__collapse": true,
         "__label": "Translation Dialogue"
       },
       "children": {
@@ -64,7 +64,6 @@
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "\"Você nunca terá uma\ncasa própria!\"",
                 "Ache um meio de quebrar\nessa crença limitadora."
               ],
               "__section": "text",
@@ -85,7 +84,7 @@
               "closeDelayFrames": 30,
               "__collapse": false
             },
-            "id": "fedac91b-a341-4585-918a-068932c6ff53"
+            "id": "9d90f888-c08c-4d2a-aa4b-61deefe636b7"
           }
         ],
         "true1": [
@@ -93,7 +92,6 @@
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "\"¡Nunca serás dueño de\nuna casa!\"",
                 "Encuentra una manera\nde romper esta creencia\nlimitante."
               ],
               "__section": "text",
@@ -114,7 +112,7 @@
               "closeDelayFrames": 30,
               "__collapse": false
             },
-            "id": "cb1c42ce-c057-4834-9b96-fa6466fb043c"
+            "id": "9f975667-36c9-4b6c-9444-dfdf7db2ce8d"
           }
         ],
         "true2": [
@@ -122,7 +120,6 @@
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "\"You will never own\na house!\"",
                 "Find a way to break this\nlimiting belief."
               ],
               "__section": "text",
@@ -143,7 +140,7 @@
               "closeDelayFrames": 30,
               "__collapse": false
             },
-            "id": "a14acbaf-2a44-4ff6-b10e-95846f62ca4c"
+            "id": "dff8967f-26c9-4fe2-9dff-530f26e62900"
           }
         ],
         "true3": [],
@@ -161,7 +158,7 @@
         "true15": [],
         "false": []
       },
-      "id": "8fa8912d-458f-4480-b840-c9a531b7f4b5"
+      "id": "0af07401-1fc1-4203-b585-256016d35c2b"
     }
   ],
   "startScript": [

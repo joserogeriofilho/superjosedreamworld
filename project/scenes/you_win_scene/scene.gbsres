@@ -27,6 +27,162 @@
     {
       "command": "EVENT_WAIT",
       "args": {
+        "time": 5,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "4f7dec75-79e0-41e8-95b0-5f133dcc2bbb"
+    },
+    {
+      "command": "EVENT_SWITCH",
+      "args": {
+        "variable": "0",
+        "choices": 3,
+        "__collapseCase0": false,
+        "value0": 1,
+        "__collapseCase1": false,
+        "value1": 2,
+        "__collapseCase2": false,
+        "value2": 3,
+        "__collapseCase3": false,
+        "value3": 4,
+        "__collapseCase4": false,
+        "value4": 5,
+        "__collapseCase5": false,
+        "value5": 6,
+        "__collapseCase6": false,
+        "value6": 7,
+        "__collapseCase7": false,
+        "value7": 8,
+        "__collapseCase8": false,
+        "value8": 9,
+        "__collapseCase9": false,
+        "value9": 10,
+        "__collapseCase10": false,
+        "value10": 11,
+        "__collapseCase11": false,
+        "value11": 12,
+        "__collapseCase12": false,
+        "value12": 13,
+        "__collapseCase13": false,
+        "value13": 14,
+        "__collapseCase14": false,
+        "value14": 15,
+        "__collapseCase15": false,
+        "value15": 16,
+        "__collapseElse": false,
+        "__disableElse": true,
+        "__collapse": false,
+        "__label": "Translation Dialogue"
+      },
+      "children": {
+        "true0": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Obrigado por gastar\nalguns minutos na minha\ndemo.",
+                "Espero que tenha\nconseguido te dar umas\nrisadinhas ;)"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30,
+              "__collapse": false
+            },
+            "id": "14f77e24-5ad9-496c-a836-50f069edceea"
+          }
+        ],
+        "true1": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "¡Gracias por tu tiempo\njugando mi demo!",
+                "Espero que te haya\nentregado un par de\nrisas ;)"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30,
+              "__collapse": false
+            },
+            "id": "bb659317-4e38-4961-a829-6505995fd5ce"
+          }
+        ],
+        "true2": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Thank you for your time\nplaying my demo!",
+                "I hope I got a couple of\nlaughs from you ;)"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30,
+              "__collapse": false
+            },
+            "id": "cd5555eb-ebe9-4b42-8804-3d8d6bdc446d"
+          }
+        ],
+        "true3": [],
+        "true4": [],
+        "true5": [],
+        "true6": [],
+        "true7": [],
+        "true8": [],
+        "true9": [],
+        "true10": [],
+        "true11": [],
+        "true12": [],
+        "true13": [],
+        "true14": [],
+        "true15": [],
+        "false": []
+      },
+      "id": "07e39fe8-19a2-4dd1-9e56-2de218225fad"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
         "time": 1,
         "frames": 30,
         "__collapse": true
@@ -34,39 +190,22 @@
       "id": "4c42a644-1592-41ed-a4c2-d67846b0134c"
     },
     {
-      "command": "EVENT_SET_INPUT_SCRIPT",
+      "command": "EVENT_SWITCH_SCENE",
       "args": {
-        "input": [
-          "b",
-          "a",
-          "start"
-        ],
-        "override": true,
-        "__scriptTabs": "press",
+        "sceneId": "a0e3517e-0f87-43ff-835b-f5554389b41c",
+        "x": {
+          "type": "number",
+          "value": 3
+        },
+        "y": {
+          "type": "number",
+          "value": 5
+        },
+        "direction": "",
+        "fadeSpeed": 4,
         "__collapse": true
       },
-      "children": {
-        "true": [
-          {
-            "command": "EVENT_SWITCH_SCENE",
-            "args": {
-              "sceneId": "a0e3517e-0f87-43ff-835b-f5554389b41c",
-              "x": {
-                "type": "number",
-                "value": 3
-              },
-              "y": {
-                "type": "number",
-                "value": 5
-              },
-              "direction": "",
-              "fadeSpeed": 4
-            },
-            "id": "43e09ac8-272e-4d88-9180-bf46a57b62d0"
-          }
-        ]
-      },
-      "id": "217bb1db-f133-415d-b010-a9922731b1b3"
+      "id": "33e3f5f3-e8e9-4ac4-bfb4-9827fd9f4118"
     }
   ],
   "playerHit1Script": [],

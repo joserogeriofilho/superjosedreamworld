@@ -59,7 +59,7 @@
               "choices": 3,
               "__collapseCase0": true,
               "value0": 1,
-              "__collapseCase1": true,
+              "__collapseCase1": false,
               "value1": 2,
               "__collapseCase2": true,
               "value2": 3,
@@ -91,7 +91,7 @@
               "value15": 16,
               "__collapseElse": false,
               "__disableElse": true,
-              "__collapse": true,
+              "__collapse": false,
               "__label": "Translation Dialogue"
             },
             "children": {
@@ -128,7 +128,7 @@
                   "command": "EVENT_TEXT",
                   "args": {
                     "text": [
-                      "Ay, que sueño. Creo que\nuna ciesta iría bien."
+                      "Ay, que sueño. Creo que\nuna siesta me iría bien."
                     ],
                     "__section": "text",
                     "avatarId": "",
@@ -146,7 +146,7 @@
                     "closeButton": "a",
                     "closeDelayTime": 0.5,
                     "closeDelayFrames": 30,
-                    "__collapse": false
+                    "__collapse": true
                   },
                   "id": "289cc981-a9ac-404e-8803-89cf3eb653c7"
                 }

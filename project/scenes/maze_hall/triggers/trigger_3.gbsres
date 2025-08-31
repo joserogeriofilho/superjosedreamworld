@@ -295,7 +295,7 @@
               "choices": 3,
               "__collapseCase0": true,
               "value0": 1,
-              "__collapseCase1": true,
+              "__collapseCase1": false,
               "value1": 2,
               "__collapseCase2": true,
               "value2": 3,
@@ -327,7 +327,7 @@
               "value15": 16,
               "__collapseElse": false,
               "__disableElse": true,
-              "__collapse": true,
+              "__collapse": false,
               "__label": "Translation Dialogue"
             },
             "children": {
@@ -368,7 +368,7 @@
                   "args": {
                     "text": [
                       "¿Estás loco, tío?\nNo puedes salir así\ndesarmado.",
-                      "Utilize tu super poder\nde auto-conhecimento para\ndefenderse de inimigos.",
+                      "Utiliza tu super poder\nde auto-conocimiento\npara defenderte de\nlos enemigos.",
                       "...",
                       "¿Cómo que no sabes\nusarlo?\nSolo presiona el botón B."
                     ],
@@ -388,7 +388,7 @@
                     "closeButton": "a",
                     "closeDelayTime": 0.5,
                     "closeDelayFrames": 30,
-                    "__collapse": true
+                    "__collapse": false
                   },
                   "id": "7805d7b9-f156-457c-a412-7aa8992f3985"
                 }
