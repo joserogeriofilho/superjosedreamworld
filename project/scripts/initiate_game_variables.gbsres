@@ -102,6 +102,17 @@
         "__collapse": true
       },
       "id": "787a4c09-a25c-43e9-9ecd-dba3c106c8e0"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "13",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "7654538f-ff5d-4887-a273-2d9d9291bd9e"
     }
   ]
 }

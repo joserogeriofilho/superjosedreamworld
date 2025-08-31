@@ -65,6 +65,11 @@
       "id": "12",
       "name": "should_boss_teleport",
       "symbol": "var_should_boss_teleport"
+    },
+    {
+      "id": "13",
+      "name": "first_dialogue_healer",
+      "symbol": "var_first_dialogue_healer"
     }
   ]
 }

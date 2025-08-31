@@ -5,7 +5,7 @@
   "symbol": "sprite_girl",
   "numFrames": 4,
   "filename": "girl.png",
-  "checksum": "41c17e677210e81a060e49dbe9681558e5ff340c",
+  "checksum": "535cf082aaed7007d44343a054fe56da15d98355",
   "width": 64,
   "height": 48,
   "states": [
@@ -531,7 +531,7 @@
       ]
     }
   ],
-  "numTiles": 17,
+  "numTiles": 18,
   "canvasWidth": 16,
   "canvasHeight": 16,
   "boundsX": 0,
